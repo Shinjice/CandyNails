@@ -1,0 +1,2972 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Candy Nails & Spa | Premium Luxury Nail Boutique</title>
+
+    <!-- Premium Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* CSS Custom Variables for the Cohesive Natural Tones Palette */
+      :root {
+        --color-blush: #f8eceb; /* Soft pink background */
+        --color-blush-light: #ffffff; /* Ultra-light highlight pink / pure white */
+        --color-cream: #fdf8f7; /* Clean warm ivory background */
+        --color-rose: #d4a3a3; /* Elegant dusty rose markup */
+        --color-rose-dark: #b98d8d; /* Darker dusty rose for active triggers */
+        --color-mauve: #a68b8b; /* Sophisticated muted mauve */
+        --color-burgundy: #4a0e1c; /* Rich, high-contrast dark burgundy text */
+        --color-burgundy-light: #631425;
+        --color-gold: #c5a059; /* Glittering premium gold accents */
+        --color-gold-light: #e5cd9d;
+        --font-serif: "Playfair Display", Georgia, serif;
+        --font-sans: "Montserrat", system-ui, -apple-system, sans-serif;
+        --shadow-soft: 0 4px 15px rgba(74, 14, 28, 0.02);
+        --shadow-medium: 0 10px 30px rgba(74, 14, 28, 0.06);
+        --shadow-accent: 0 12px 35px rgba(212, 163, 163, 0.15);
+      }
+
+      /* Core Reset & Base Styles */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: var(--font-sans);
+        background-color: var(--color-cream);
+        color: var(--color-burgundy);
+        line-height: 1.6;
+        overflow-x: hidden;
+        font-size: 15px;
+      }
+
+      /* Custom Selection Styling */
+      ::selection {
+        background-color: var(--color-rose);
+        color: var(--color-cream);
+      }
+
+      /* Elegant Typography Styles */
+      h1,
+      h2,
+      h3,
+      h4,
+      .serif-text {
+        font-family: var(--font-serif);
+        font-weight: 500;
+        letter-spacing: -0.01em;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        transition: all 0.3s ease;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      /* Luxury Gold Border Frame (Decorative Accent) */
+      .page-frame {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 6px solid var(--color-cream);
+        pointer-events: none;
+        z-index: 1000;
+      }
+
+      @media (max-width: 768px) {
+        .page-frame {
+          border-width: 3px;
+        }
+      }
+
+      /* Buttons Components matching the sharp couture aesthetic */
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 26px;
+        border-radius: 2px; /* rounded-sm equivalent */
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        border: 1px solid transparent;
+        outline: none;
+      }
+
+      .btn-primary {
+        background-color: var(--color-burgundy);
+        color: white;
+        box-shadow: 0 4px 12px rgba(74, 14, 28, 0.12);
+      }
+
+      .btn-primary:hover {
+        background-color: var(--color-burgundy-light);
+        color: white;
+        border-color: var(--color-burgundy-light);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(74, 14, 28, 0.18);
+      }
+
+      .btn-secondary {
+        background-color: var(--color-rose);
+        color: white;
+        box-shadow: 0 4px 12px rgba(212, 163, 163, 0.15);
+      }
+
+      .btn-secondary:hover {
+        background-color: var(--color-burgundy);
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 18px rgba(74, 14, 28, 0.1);
+      }
+
+      .btn-gold {
+        background-color: var(--color-gold);
+        color: white;
+        box-shadow: 0 5px 15px rgba(197, 160, 89, 0.2);
+      }
+
+      .btn-gold:hover {
+        background-color: var(--color-burgundy);
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(74, 14, 28, 0.15);
+      }
+
+      /* 1. Header & Navigation */
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        background-color: rgba(253, 248, 247, 0.95);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid #e9dada;
+        transition: all 0.3s ease;
+      }
+
+      header.scrolled {
+        padding: 10px 0;
+        box-shadow: 0 4px 20px rgba(74, 14, 28, 0.04);
+        background-color: #fdf8f7;
+      }
+
+      .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+        transition: height 0.3s ease;
+      }
+
+      header.scrolled .header-container {
+        height: 64px;
+      }
+
+      /* Logo Text styles */
+      .logo-container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .logo-text {
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--color-burgundy);
+        letter-spacing: -0.01em;
+        position: relative;
+      }
+
+      .logo-text span {
+        color: var(--color-gold);
+      }
+
+      .logo-sub {
+        font-size: 9px;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        color: var(--color-mauve);
+        margin-top: -2px;
+      }
+
+      /* Navigation Menu */
+      .nav-menu {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+      }
+
+      @media (max-width: 768px) {
+        .nav-menu {
+          display: none;
+        }
+      }
+
+      .nav-link {
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--color-burgundy);
+        padding: 8px 0;
+        position: relative;
+      }
+
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: var(--color-gold);
+        transition: width 0.3s ease;
+      }
+
+      .nav-link:hover {
+        color: var(--color-rose);
+      }
+
+      .nav-link:hover::after,
+      .nav-link.active::after {
+        width: 100%;
+      }
+
+      /* Right Action Button */
+      .header-cta {
+        display: block;
+      }
+
+      @media (max-width: 992px) {
+        .header-cta {
+          display: none;
+        }
+      }
+
+      /* Mobile Hamburger Trigger */
+      .hamburger {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 24px;
+        height: 16px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 1001;
+      }
+
+      .hamburger span {
+        width: 100%;
+        height: 1.5px;
+        background-color: var(--color-burgundy);
+        transition: all 0.3s ease;
+        transform-origin: left center;
+      }
+
+      @media (max-width: 768px) {
+        .hamburger {
+          display: flex;
+        }
+      }
+
+      /* Hamburger Active morphing into X */
+      .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg);
+        background-color: var(--color-burgundy);
+      }
+
+      .hamburger.active span:nth-child(2) {
+        width: 0;
+        opacity: 0;
+      }
+
+      .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg);
+        background-color: var(--color-burgundy);
+      }
+
+      /* Mobile Nav Overlay */
+      .mobile-nav-overlay {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--color-cream);
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 36px;
+        transition: right 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .mobile-nav-overlay.active {
+        right: 0;
+      }
+
+      .mobile-nav-link {
+        font-family: var(--font-serif);
+        font-size: 28px;
+        color: var(--color-burgundy);
+        text-transform: capitalize;
+      }
+
+      .mobile-nav-link:hover {
+        color: var(--color-gold);
+        padding-left: 10px;
+      }
+
+      /* 2. Hero Section */
+      .hero-section {
+        padding: 160px 0 100px 0;
+        background: linear-gradient(
+          135deg,
+          var(--color-blush) 0%,
+          var(--color-cream) 100%
+        );
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* Soft fluid aesthetic gradient background blobs */
+      .hero-bg-blobs {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        pointer-events: none;
+      }
+
+      .blob-1 {
+        position: absolute;
+        top: -10%;
+        right: -10%;
+        width: 60%;
+        height: 70%;
+        background: radial-gradient(
+          circle,
+          rgba(212, 163, 163, 0.15) 0%,
+          rgba(255, 255, 255, 0) 70%
+        );
+        border-radius: 50%;
+      }
+
+      .blob-2 {
+        position: absolute;
+        bottom: -20%;
+        left: -10%;
+        width: 50%;
+        height: 60%;
+        background: radial-gradient(
+          circle,
+          rgba(166, 139, 139, 0.08) 0%,
+          rgba(255, 255, 255, 0) 70%
+        );
+        border-radius: 50%;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 48px;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+      }
+
+      .hero-content {
+        max-width: 580px;
+      }
+
+      .hero-tag {
+        font-size: 9px;
+        text-transform: uppercase;
+        letter-spacing: 0.35em;
+        color: var(--color-gold);
+        background-color: rgba(197, 160, 89, 0.08);
+        padding: 8px 16px;
+        border-radius: 30px;
+        display: inline-block;
+        margin-bottom: 24px;
+        font-weight: 600;
+      }
+
+      .hero-title {
+        font-size: 54px;
+        color: var(--color-burgundy);
+        line-height: 1.15;
+        margin-bottom: 24px;
+      }
+
+      .hero-title span {
+        font-style: italic;
+        color: var(--color-rose);
+      }
+
+      .hero-subheading {
+        font-size: 16px;
+        color: var(--color-mauve);
+        margin-bottom: 40px;
+        font-weight: 300;
+      }
+
+      .hero-cta-group {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      /* Editorial image frame resembling the Nura Beauty brand */
+      .hero-image-frame {
+        position: relative;
+        padding: 12px;
+        background-color: var(--color-cream);
+        border-radius: 200px 200px 24px 24px; /* Soft arched top mimicking elegant window layouts */
+        box-shadow: var(--shadow-medium);
+        transition: transform 0.6s ease;
+        max-width: 440px;
+        margin: 0 auto;
+      }
+
+      .hero-image-frame:hover {
+        transform: translateY(-8px);
+      }
+
+      .hero-img {
+        border-radius: 190px 190px 18px 18px;
+        width: 100%;
+        height: 520px;
+        object-fit: cover;
+      }
+
+      /* Small decorative elements on the Hero */
+      .hero-badge-floating {
+        position: absolute;
+        bottom: 40px;
+        left: -30px;
+        background-color: var(--color-cream);
+        padding: 16px 24px;
+        border-radius: 12px;
+        box-shadow: var(--shadow-soft);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        animation: float 4s ease-in-out infinite;
+        border-left: 3px solid var(--color-gold);
+      }
+
+      .hero-badge-floating .star-group {
+        color: var(--color-gold);
+        font-size: 12px;
+      }
+
+      .hero-badge-title {
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      .hero-badge-sub {
+        font-size: 10px;
+        color: var(--color-mauve);
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-8px);
+        }
+      }
+
+      @media (max-width: 992px) {
+        .hero-grid {
+          grid-template-columns: 1fr;
+          gap: 60px;
+          text-align: center;
+        }
+        .hero-content {
+          max-width: 100%;
+          margin: 0 auto;
+        }
+        .hero-cta-group {
+          justify-content: center;
+        }
+        .hero-image-frame {
+          max-width: 380px;
+        }
+        .hero-img {
+          height: 440px;
+        }
+        .hero-badge-floating {
+          left: 10px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .hero-title {
+          font-size: 38px;
+        }
+        .hero-image-frame {
+          max-width: 100%;
+        }
+        .hero-img {
+          height: 380px;
+        }
+      }
+
+      /* Divider Accent */
+      .section-divider {
+        text-align: center;
+        padding: 40px 0;
+        background-color: var(--color-cream);
+      }
+      .divider-line {
+        display: inline-block;
+        width: 80px;
+        height: 1px;
+        background-color: #e9dada;
+        position: relative;
+      }
+      .divider-line::after {
+        content: "✦";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--color-cream);
+        padding: 0 10px;
+        font-size: 11px;
+        color: var(--color-gold);
+      }
+
+      /* 3. Services Section */
+      .services-section {
+        padding: 100px 0;
+        background-color: var(--color-cream);
+      }
+
+      .section-header {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto 64px auto;
+      }
+
+      .section-tag {
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        color: var(--color-gold);
+        margin-bottom: 12px;
+        display: block;
+        font-weight: 600;
+      }
+
+      .section-title {
+        font-size: 42px;
+        color: var(--color-burgundy);
+        margin-bottom: 16px;
+      }
+
+      .section-sub {
+        font-size: 14px;
+        color: var(--color-mauve);
+        font-weight: 300;
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+      }
+
+      @media (max-width: 1200px) {
+        .services-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 600px) {
+        .services-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* Natural Tones Card layout */
+      .service-card {
+        background-color: #f9f1f0; /* bg-[#f9f1f0] from Design HTML */
+        border: 1px solid #eee2e1; /* border-[#eee2e1] from Design HTML */
+        border-radius: 8px; /* rounded-lg scale */
+        overflow: hidden;
+        box-shadow: none;
+        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      }
+
+      .service-card:hover {
+        transform: translateY(-4px);
+        background-color: #ffffff;
+        box-shadow: 0 8px 24px rgba(74, 14, 28, 0.04);
+        border-color: #d4a3a3;
+      }
+
+      .service-img-wrapper {
+        position: relative;
+        overflow: hidden;
+        height: 240px;
+      }
+
+      .service-img-wrapper::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+          to bottom,
+          rgba(74, 14, 28, 0) 60%,
+          rgba(74, 14, 28, 0.2) 100%
+        );
+      }
+
+      .service-card-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+
+      .service-card:hover .service-card-img {
+        transform: scale(1.08);
+      }
+
+      .service-price-badge {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        background-color: rgba(253, 248, 247, 0.95);
+        backdrop-filter: blur(4px);
+        padding: 6px 14px;
+        border-radius: 30px;
+        font-size: 11px;
+        font-weight: 600;
+        color: var(--color-burgundy);
+        letter-spacing: 0.05em;
+        border: 1px solid rgba(197, 160, 89, 0.2);
+      }
+
+      .service-card-content {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+      }
+
+      .service-card-title {
+        font-size: 20px;
+        color: var(--color-burgundy);
+        margin-bottom: 12px;
+      }
+
+      .service-card-desc {
+        font-size: 13px;
+        color: var(--color-mauve);
+        margin-bottom: 24px;
+        font-weight: 300;
+        flex-grow: 1;
+      }
+
+      .service-card-btn {
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid var(--color-rose);
+        color: var(--color-burgundy);
+        padding: 12px 20px;
+        border-radius: 2px; /* sharp edges */
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-align: center;
+      }
+
+      .service-card-btn:hover {
+        background-color: var(--color-rose);
+        color: white;
+        border-color: var(--color-rose);
+      }
+
+      /* 4. Promo Section */
+      .promo-section {
+        padding: 100px 0;
+        background-color: var(--color-blush);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .promo-grid {
+        display: grid;
+        grid-template-columns: 0.95fr 1.05fr;
+        gap: 60px;
+        align-items: center;
+      }
+
+      @media (max-width: 992px) {
+        .promo-grid {
+          grid-template-columns: 1fr;
+          gap: 40px;
+          text-align: center;
+        }
+      }
+
+      .promo-content {
+        position: relative;
+        z-index: 2;
+      }
+
+      .promo-tag {
+        font-size: 9px;
+        text-transform: uppercase;
+        letter-spacing: 0.4em;
+        color: var(--color-gold);
+        margin-bottom: 16px;
+        display: block;
+        font-weight: 600;
+      }
+
+      .promo-heading {
+        font-size: 46px;
+        color: var(--color-burgundy);
+        line-height: 1.15;
+        margin-bottom: 24px;
+      }
+
+      .promo-heading span {
+        font-style: italic;
+        color: var(--color-rose);
+      }
+
+      .promo-desc {
+        font-size: 14px;
+        color: var(--color-mauve);
+        margin-bottom: 32px;
+        font-weight: 300;
+      }
+
+      /* Dynamic Digital Countdown Timer design */
+      .countdown-wrapper {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 40px;
+      }
+
+      @media (max-width: 992px) {
+        .countdown-wrapper {
+          justify-content: center;
+        }
+      }
+
+      .countdown-box {
+        background-color: #ffffff;
+        min-width: 80px;
+        padding: 16px 12px;
+        border-radius: 2px;
+        text-align: center;
+        border: 1px solid #e9dada;
+        box-shadow: 0 4px 15px rgba(74, 14, 28, 0.02);
+      }
+
+      .countdown-number {
+        font-family: var(--font-serif);
+        font-size: 28px;
+        font-weight: 600;
+        color: var(--color-burgundy);
+        display: block;
+        line-height: 1;
+        margin-bottom: 4px;
+      }
+
+      .countdown-label {
+        font-size: 9px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--color-mauve);
+        font-weight: 500;
+      }
+
+      .promo-image-container {
+        position: relative;
+      }
+
+      .promo-decorative-frame {
+        position: relative;
+        outline: 1px solid rgba(197, 160, 89, 0.4);
+        outline-offset: 12px;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: var(--shadow-soft);
+      }
+
+      .promo-img {
+        width: 100%;
+        height: 380px;
+        object-fit: cover;
+        vertical-align: middle;
+      }
+
+      /* 5. About / Trust Testimonial Section */
+      .about-section {
+        padding: 100px 0;
+        background-color: var(--color-cream);
+      }
+
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1.12fr 0.88fr;
+        gap: 60px;
+        align-items: center;
+      }
+
+      @media (max-width: 992px) {
+        .about-grid {
+          grid-template-columns: 1fr;
+          gap: 60px;
+        }
+      }
+
+      .about-story {
+        padding-right: 20px;
+      }
+
+      .about-title {
+        font-size: 42px;
+        color: var(--color-burgundy);
+        margin-bottom: 24px;
+      }
+
+      .about-text {
+        font-size: 14px;
+        color: var(--color-mauve);
+        margin-bottom: 20px;
+        font-weight: 300;
+      }
+
+      .about-signature-block {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-top: 36px;
+      }
+
+      .about-creator-sig {
+        font-family: var(--font-serif);
+        font-size: 24px;
+        font-style: italic;
+        color: var(--color-burgundy);
+      }
+
+      .about-creator-title {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: var(--color-gold);
+        font-weight: 600;
+      }
+
+      /* Premium Testimonial Rotator */
+      .testimonial-card-luxury {
+        background-color: #ffffff;
+        border-radius: 12px;
+        padding: 44px;
+        border: 1px solid #e9dada; /* border-[#e9dada] */
+        position: relative;
+        box-shadow: none;
+        overflow: hidden;
+        text-align: center;
+      }
+
+      .testimonial-slider {
+        position: relative;
+        min-height: 180px;
+      }
+
+      .slide {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition:
+          opacity 0.5s ease-in-out,
+          transform 0.5s ease-in-out;
+        transform: translateY(10px);
+      }
+
+      .slide.active {
+        opacity: 1;
+        visibility: visible;
+        position: relative;
+        transform: translateY(0);
+      }
+
+      .star-rating {
+        color: var(--color-gold);
+        font-size: 14px;
+        margin-bottom: 16px;
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+      }
+
+      .testimonial-text {
+        font-size: 14px;
+        font-family: var(--font-serif);
+        color: #7a5a5a;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        font-style: italic;
+      }
+
+      .testimonial-client {
+        font-weight: 600;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: var(--color-burgundy);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .testimonial-client::before,
+      .testimonial-client::after {
+        content: "";
+        width: 12px;
+        height: 1px;
+        background-color: var(--color-rose);
+        display: inline-block;
+      }
+
+      .slider-controls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 32px;
+      }
+
+      .slider-ctrl-btn {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: var(--color-cream);
+        border: 1px solid #e9dada;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: var(--color-burgundy);
+        transition: all 0.3s ease;
+        font-size: 12px;
+      }
+
+      .slider-ctrl-btn:hover {
+        background-color: var(--color-burgundy);
+        color: var(--color-cream);
+        border-color: var(--color-burgundy);
+      }
+
+      .slider-dots {
+        display: flex;
+        gap: 6px;
+      }
+
+      .dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: rgba(74, 14, 28, 0.15);
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .dot.active {
+        background-color: var(--color-burgundy);
+        width: 18px;
+        border-radius: 3px;
+      }
+
+      /* 6. Gallery Preview Section with Live Filter Controls */
+      .gallery-section {
+        padding: 100px 0;
+        background-color: var(--color-blush);
+      }
+
+      .gallery-filter-menu {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-bottom: 48px;
+      }
+
+      .filter-btn {
+        background: none;
+        border: none;
+        padding: 10px 24px;
+        cursor: pointer;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        color: var(--color-mauve);
+        border-radius: 30px;
+        border: 1px solid transparent;
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .filter-btn:hover {
+        color: var(--color-burgundy);
+      }
+
+      .filter-btn.active {
+        background-color: var(--color-cream);
+        border-color: #e9dada;
+        color: var(--color-burgundy);
+        box-shadow: 0 4px 15px rgba(74, 14, 28, 0.02);
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+
+      @media (max-width: 992px) {
+        .gallery-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 576px) {
+        .gallery-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .gallery-item {
+        border-radius: 12px;
+        overflow: hidden;
+        aspect-ratio: 1;
+        position: relative;
+        background-color: var(--color-cream);
+        box-shadow: var(--shadow-soft);
+        transition: all 0.5s ease-in-out;
+      }
+
+      /* Hide element style for js dynamic filters */
+      .gallery-item.hidden {
+        display: none;
+        opacity: 0;
+        transform: scale(0.95);
+      }
+
+      .gallery-item-inner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .gallery-gradient-bg {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          135deg,
+          var(--color-cream) 0%,
+          var(--color-blush) 100%
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+
+      /* Soft geometric patterns inside the gradients for highly stylized elegant looks */
+      .gallery-gradient-sparkle {
+        font-size: 36px;
+        opacity: 0.25;
+        color: var(--color-rose);
+        transform: translateY(-10px);
+        transition: transform 0.5s ease;
+      }
+
+      .gallery-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+
+      .gallery-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(
+          74,
+          14,
+          28,
+          0.9
+        ); /* Burgundy dark tint layer on active hover */
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease;
+        padding: 24px;
+        text-align: center;
+      }
+
+      .gallery-item:hover .gallery-overlay {
+        opacity: 1;
+      }
+
+      .gallery-item:hover .gallery-img {
+        transform: scale(1.08);
+      }
+
+      .gallery-item:hover .gallery-gradient-sparkle {
+        transform: translateY(0) scale(1.1);
+      }
+
+      .gallery-item-category {
+        font-size: 9px;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: var(--color-rose);
+        margin-bottom: 8px;
+      }
+
+      .gallery-item-title {
+        font-family: var(--font-serif);
+        font-size: 20px;
+        color: var(--color-cream);
+        margin-bottom: 4px;
+      }
+
+      .gallery-item-tag {
+        font-size: 11px;
+        color: var(--color-gold-light);
+        font-style: italic;
+      }
+
+      /* 7. Footer */
+      footer {
+        background-color: #f4e6e4; /* bg-[#f4e6e4] */
+        border-top: 1px solid #e9dada; /* border-[#e9dada] */
+        color: #7a5a5a; /* text-[#7a5a5a] */
+        padding: 100px 0 24px 0;
+        position: relative;
+      }
+
+      footer .divider-line {
+        background-color: rgba(74, 14, 28, 0.08);
+        margin-bottom: 60px;
+      }
+
+      footer .divider-line::after {
+        background-color: #f4e6e4;
+        color: var(--color-gold);
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr 1fr 1fr;
+        gap: 40px;
+        margin-bottom: 64px;
+      }
+
+      @media (max-width: 992px) {
+        .footer-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 48px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .footer-grid {
+          grid-template-columns: 1fr;
+          gap: 36px;
+        }
+      }
+
+      .footer-logo-title {
+        font-family: var(--font-serif);
+        font-size: 26px;
+        margin-bottom: 12px;
+        color: var(--color-burgundy);
+      }
+
+      .footer-logo-title span {
+        color: var(--color-rose);
+      }
+
+      .footer-tagline {
+        font-size: 13px;
+        color: #7a5a5a;
+        margin-bottom: 24px;
+        max-width: 240px;
+      }
+
+      .footer-socials {
+        display: flex;
+        gap: 12px;
+      }
+
+      .footer-social-icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: rgba(74, 14, 28, 0.05); /* organic grey burgundy */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-burgundy);
+        transition: all 0.3s ease;
+        font-size: 14px;
+      }
+
+      .footer-social-icon:hover {
+        background-color: var(--color-rose);
+        color: white;
+        transform: translateY(-2px);
+      }
+
+      .footer-header {
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: var(--color-burgundy);
+        margin-bottom: 24px;
+        font-weight: 600;
+      }
+
+      .footer-links-list li {
+        margin-bottom: 12px;
+      }
+
+      .footer-link {
+        font-size: 13px;
+        color: #7a5a5a;
+      }
+
+      .footer-link:hover {
+        color: var(--color-rose);
+        padding-left: 6px;
+      }
+
+      .footer-info-item {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 16px;
+        font-size: 13px;
+        color: #7a5a5a;
+        line-height: 1.5;
+      }
+
+      .footer-info-item svg,
+      .footer-info-item span.icon {
+        color: var(--color-rose);
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+
+      /* Newsletter Form */
+      .newsletter-box {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .newsletter-input-wrap {
+        display: flex;
+        width: 100%;
+        position: relative;
+      }
+
+      .newsletter-input {
+        background-color: #ffffff;
+        border: 1px solid #e9dada;
+        padding: 12px 18px;
+        border-radius: 2px;
+        width: 100%;
+        color: var(--color-burgundy);
+        font-size: 13px;
+        outline: none;
+        transition: all 0.3s ease;
+      }
+
+      .newsletter-input:focus {
+        border-color: var(--color-rose);
+        background-color: #ffffff;
+      }
+
+      .newsletter-btn {
+        position: absolute;
+        right: 4px;
+        top: 4px;
+        bottom: 4px;
+        background-color: var(--color-rose);
+        color: white;
+        border: none;
+        border-radius: 2px;
+        padding: 0 16px;
+        font-size: 11px;
+        font-weight: 600;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        transition: all 0.3s ease;
+      }
+
+      .newsletter-btn:hover {
+        background-color: var(--color-burgundy);
+        color: white;
+      }
+
+      .newsletter-msg {
+        font-size: 11px;
+        color: var(--color-rose-dark);
+        display: none;
+        margin-top: 4px;
+      }
+
+      .copyright-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 40px;
+        border-top: 1px solid #e9dada;
+        font-size: 11px;
+        color: #a68b8b;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      @media (max-width: 768px) {
+        .copyright-row {
+          flex-direction: column;
+          gap: 16px;
+          text-align: center;
+        }
+      }
+
+      /* 8. Booking Scheduler Dialog Modal Overlay */
+      .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(74, 14, 28, 0.65);
+        backdrop-filter: blur(8px);
+        z-index: 2000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        padding: 16px;
+      }
+
+      .modal-overlay.active {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      .modal-card {
+        background-color: var(--color-cream);
+        border-radius: 24px;
+        width: 100%;
+        max-width: 580px;
+        max-height: 90vh;
+        overflow-y: auto;
+        box-shadow: var(--shadow-medium);
+        transform: scale(0.92);
+        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        position: relative;
+        border: 1px solid rgba(220, 174, 150, 0.2);
+      }
+
+      .modal-overlay.active .modal-card {
+        transform: scale(1);
+      }
+
+      .modal-close-btn {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: var(--color-burgundy);
+        opacity: 0.6;
+        transition: opacity 0.3s ease;
+        font-size: 20px;
+      }
+
+      .modal-close-btn:hover {
+        opacity: 1;
+      }
+
+      .modal-header-block {
+        padding: 40px 40px 20px 40px;
+        border-bottom: 1px solid rgba(74, 21, 25, 0.05);
+      }
+
+      .modal-title {
+        font-size: 28px;
+        color: var(--color-burgundy);
+        margin-bottom: 8px;
+      }
+
+      .modal-subtitle {
+        font-size: 13px;
+        color: var(--color-mauve);
+        font-weight: 300;
+      }
+
+      /* Form Fields Styling */
+      .booking-form {
+        padding: 30px 40px 40px 40px;
+      }
+
+      .form-group-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 576px) {
+        .form-group-row {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-label {
+        display: block;
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--color-burgundy);
+        margin-bottom: 8px;
+      }
+
+      .form-control {
+        width: 100%;
+        background-color: var(--color-blush-light);
+        border: 1px solid rgba(74, 21, 25, 0.08);
+        border-radius: 8px;
+        padding: 12px 16px;
+        font-size: 13px;
+        color: var(--color-burgundy);
+        outline: none;
+        transition: all 0.3s ease;
+        font-family: var(--font-sans);
+      }
+
+      .form-control:focus {
+        border-color: var(--color-gold);
+        background-color: white;
+        box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.1);
+      }
+
+      select.form-control {
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%234A1519'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 16px center;
+        background-size: 14px;
+        padding-right: 40px;
+      }
+
+      /* Validation Feedback */
+      .error-msg {
+        font-size: 11px;
+        color: #b91c1c;
+        margin-top: 4px;
+        display: none;
+      }
+
+      /* Confirmation Box Style */
+      .booking-success-container {
+        display: none;
+        text-align: center;
+        padding: 48px;
+      }
+
+      .success-checkmark {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background-color: rgba(197, 160, 89, 0.1);
+        color: var(--color-gold);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+        margin: 0 auto 24px auto;
+      }
+
+      .success-heading {
+        font-size: 32px;
+        color: var(--color-burgundy);
+        margin-bottom: 12px;
+      }
+
+      .success-text {
+        font-size: 13px;
+        color: var(--color-mauve);
+        margin-bottom: 28px;
+        font-weight: 300;
+      }
+
+      .appointment-summary-box {
+        background-color: var(--color-blush-light);
+        border: 1px dashed rgba(220, 174, 150, 0.5);
+        border-radius: 12px;
+        padding: 24px;
+        text-align: left;
+        margin-bottom: 32px;
+      }
+
+      .summary-line {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        font-size: 13px;
+        border-bottom: 1px solid rgba(74, 21, 25, 0.03);
+        padding-bottom: 6px;
+      }
+
+      .summary-line:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      .summary-label {
+        color: var(--color-mauve);
+      }
+
+      .summary-value {
+        font-weight: 600;
+        color: var(--color-burgundy);
+      }
+
+      .summary-ref-code {
+        display: inline-block;
+        background-color: rgba(197, 160, 89, 0.15);
+        color: var(--color-burgundy);
+        padding: 4px 10px;
+        border-radius: 4px;
+        font-family: monospace;
+        font-size: 12px;
+      }
+
+      /* Floating Booking Button */
+      .floating-booking-btn {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 900;
+        background-color: var(--color-burgundy);
+        color: var(--color-cream);
+        box-shadow: var(--shadow-accent);
+        padding: 16px 28px;
+        border-radius: 50px;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .floating-booking-btn:hover {
+        background-color: var(--color-gold);
+        color: var(--color-burgundy);
+        transform: translateY(-4px);
+      }
+
+      .floating-booking-btn svg {
+        color: var(--color-gold);
+      }
+
+      @media (max-width: 576px) {
+        .floating-booking-btn {
+          bottom: 20px;
+          right: 20px;
+          padding: 12px 20px;
+          font-size: 11px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Floating Luxury Accent border frame -->
+    <div class="page-frame"></div>
+
+    <!-- Header -->
+    <header id="mainHdr">
+      <div class="container header-container">
+        <!-- Logo -->
+        <a href="#home" class="logo-container">
+          <div class="logo-text">Candy<span>Nails</span></div>
+          <div class="logo-sub">& Spa</div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Desktop CTA -->
+        <div class="header-cta">
+          <button
+            class="btn btn-primary"
+            onclick="openBookingModal('Manicure general')"
+          >
+            Book Appointment
+          </button>
+        </div>
+
+        <!-- Hamburger button / menu trigger for mobile devices -->
+        <button
+          class="hamburger"
+          id="hamburgerTrigger"
+          aria-label="Toggle Navigation Stack"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Sliding Mobile Nav Link List Backdrop Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay">
+      <a href="#home" class="mobile-nav-link" onclick="closeMobileNav()"
+        >Home</a
+      >
+      <a href="#services" class="mobile-nav-link" onclick="closeMobileNav()"
+        >Services</a
+      >
+      <a href="#about" class="mobile-nav-link" onclick="closeMobileNav()"
+        >About</a
+      >
+      <a href="#gallery" class="mobile-nav-link" onclick="closeMobileNav()"
+        >Gallery</a
+      >
+      <a href="#contact" class="mobile-nav-link" onclick="closeMobileNav()"
+        >Contact</a
+      >
+      <button
+        class="btn btn-primary"
+        onclick="
+          closeMobileNav();
+          openBookingModal('General consultation');
+        "
+      >
+        Book Service
+      </button>
+    </div>
+
+    <!-- Main page container -->
+    <div id="home"></div>
+
+    <!-- 2. Hero Section -->
+    <section class="hero-section">
+      <!-- Liquid graphic blobs for premium feeling -->
+      <div class="hero-bg-blobs">
+        <div class="blob-1"></div>
+        <div class="blob-2"></div>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-tag">COUTURE EXPERIENCES * PREMIUM CARE</div>
+          <h1 class="hero-title">
+            Beauty Begins at<br />Your <span>Fingertips</span>
+          </h1>
+          <p class="hero-subheading">
+            Indulge in an exquisite sanctuary of high-fashion nail artistry,
+            nourishing spa therapies, and flawless couture polishes designed
+            exclusively to reflect your distinct elegance.
+          </p>
+          <div class="hero-cta-group">
+            <button
+              class="btn btn-primary"
+              onclick="openBookingModal('Gel Manicure')"
+            >
+              Book Appointment
+            </button>
+            <a href="#services" class="btn btn-secondary">Explore Services</a>
+          </div>
+        </div>
+
+        <div class="hero-image-container">
+          <div class="hero-image-frame">
+            <!-- Real generated premium asset -->
+            <img
+              src="/src/assets/images/hero_nails_studio_1781020527372.png"
+              alt="Exquisite manicured nails visual"
+              class="hero-img"
+              referrerpolicy="no-referrer"
+            />
+
+            <!-- Interactive Floating Badge -->
+            <div class="hero-badge-floating">
+              <div>
+                <div class="star-group">★ ★ ★ ★ ★</div>
+                <div class="hero-badge-title">Voted Best Salon</div>
+                <div class="hero-badge-sub">Sweetwater Springs Times</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Break -->
+    <div class="section-divider">
+      <div class="divider-line"></div>
+    </div>
+
+    <!-- 3. Our Signature Services Section -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">COUTURE REPERTOIRE</span>
+          <h2 class="section-title">Our Signature Services</h2>
+          <p class="section-sub">
+            Experience couture treatments incorporating organic lotions,
+            precision shaping techniques, and curated aesthetic art selections.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1: Gel Manicure -->
+          <div class="service-card">
+            <div class="service-img-wrapper">
+              <span class="service-price-badge">FROM $45</span>
+              <!-- Real custom generated asset for manicure -->
+              <img
+                src="/src/assets/images/manicure_art_1781020545510.png"
+                alt="Gel Manicure illustration"
+                class="service-card-img"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+            <div class="service-card-content">
+              <h3 class="service-card-title">Gel Manicure</h3>
+              <p class="service-card-desc">
+                Flawless, glossy shape-perfection cured with a non-uv system.
+                Employs protective keratin formulas that last up to 4 chip-free
+                weeks.
+              </p>
+              <button
+                class="service-card-btn"
+                onclick="openBookingModal('Gel Manicure')"
+              >
+                Book Session
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2: Acrylic Nails extension -->
+          <div class="service-card">
+            <div class="service-img-wrapper">
+              <span class="service-price-badge">FROM $65</span>
+              <!-- Real custom generated asset for manicure bottles -->
+              <img
+                src="/src/assets/images/nail_polish_promo_1781020587226.png"
+                alt="Aesthetic Acrylic Extensions"
+                class="service-card-img"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+            <div class="service-card-content">
+              <h3 class="service-card-title">Acrylic Extensions</h3>
+              <p class="service-card-desc">
+                Sleek, lightweight nail enhancements tailored to your desired
+                elegance length, sculpted using high-clarity non-yellowing
+                acrylics.
+              </p>
+              <button
+                class="service-card-btn"
+                onclick="openBookingModal('Acrylic Extensions')"
+              >
+                Book Session
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3: Freehand Nail Art -->
+          <div class="service-card">
+            <div class="service-img-wrapper">
+              <span class="service-price-badge">FROM $35</span>
+              <!-- Hand painted aesthetic design preview -->
+              <div
+                class="service-card-img"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    rgba(220, 174, 150, 0.5) 0%,
+                    rgba(155, 114, 122, 0.5) 100%
+                  );
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  height: 100%;
+                "
+              >
+                <span style="font-size: 40px; filter: grayscale(20%)">✦</span>
+              </div>
+            </div>
+            <div class="service-card-content">
+              <h3 class="service-card-title">Custom Nail Art</h3>
+              <p class="service-card-desc">
+                Work with our creative certified masters to paint bespoke
+                patterns including genuine gold leafing, marble veins, and
+                delicate floral decals.
+              </p>
+              <button
+                class="service-card-btn"
+                onclick="openBookingModal('Custom Nail Art')"
+              >
+                Book Session
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 4: Pedicure Spa -->
+          <div class="service-card">
+            <div class="service-img-wrapper">
+              <span class="service-price-badge">FROM $55</span>
+              <!-- Real custom generated asset for pedicure -->
+              <img
+                src="/src/assets/images/pedicure_spa_1781020563843.png"
+                alt="Pedicure Spa Illustration"
+                class="service-card-img"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+            <div class="service-card-content">
+              <h3 class="service-card-title">Pedicure Spa</h3>
+              <p class="service-card-desc">
+                Rejuvenating water relaxation therapy with warm essential oils,
+                organic sugar scrub skin exfoliation, hot stones massage, and
+                hydration envelopment.
+              </p>
+              <button
+                class="service-card-btn"
+                onclick="openBookingModal('Pedicure Spa')"
+              >
+                Book Session
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Promo Section with Dynamic Countdown Banner -->
+    <section class="promo-section">
+      <div class="container promo-grid">
+        <div class="promo-content">
+          <span class="promo-tag">LIMITED TIMED EVENT</span>
+          <h2 class="promo-heading">Spring Nail <span>Glow-Up</span></h2>
+          <p class="promo-desc">
+            Revitalize your seasonal aesthetic. Enjoy an exclusive 30% discount
+            on boutique custom hand-painted gel art upgrades paired with our
+            lavender pedicure spa treatment. Claim your reservation before the
+            countdown ends!
+          </p>
+
+          <!-- Live count down state elements with javascript timer driving actions -->
+          <div class="countdown-wrapper">
+            <div class="countdown-box">
+              <span class="countdown-number" id="days">02</span>
+              <span class="countdown-label">Days</span>
+            </div>
+            <div class="countdown-box">
+              <span class="countdown-number" id="hours">14</span>
+              <span class="countdown-label">Hours</span>
+            </div>
+            <div class="countdown-box">
+              <span class="countdown-number" id="minutes">45</span>
+              <span class="countdown-label">Mins</span>
+            </div>
+            <div class="countdown-box">
+              <span class="countdown-number" id="seconds">18</span>
+              <span class="countdown-label">Secs</span>
+            </div>
+          </div>
+
+          <button
+            class="btn btn-primary"
+            onclick="openBookingModal('Spring Glow-Up Deal')"
+          >
+            Claim Offer Now
+          </button>
+        </div>
+
+        <div class="promo-image-container">
+          <div class="promo-decorative-frame">
+            <img
+              src="/src/assets/images/nail_polish_promo_1781020587226.png"
+              alt="Premium beauty collection set glow"
+              class="promo-img"
+              referrerpolicy="no-referrer"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Testimonial / Story Section (Loved by Clients) -->
+    <section class="about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-story">
+          <span class="section-tag">OUR SANCTUARY SYNOPSIS</span>
+          <h2 class="about-title">Loved by Clients</h2>
+          <p class="about-text">
+            At Candy Nails & Spa, we stand committed to standardizing non-toxic,
+            meticulously sterilized boutique services. With health and creative
+            beauty standing as our defining pillars, our salon uses only the
+            finest organic creams, vegan polishes, and modern non-UV curing
+            tech.
+          </p>
+          <p class="about-text">
+            From the moment you transition through our doors, your care becomes
+            our singular canvas. Relax with customized refreshments, warm herbal
+            hand treatments, and peaceful acoustic compositions designed to
+            soothe the spirit while we perfect your fingertips.
+          </p>
+
+          <div class="about-signature-block">
+            <div>
+              <div class="about-creator-sig">Sophia Lin</div>
+              <div class="about-creator-title">Founder & Lead Artisan</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial slider / rotator element -->
+        <div>
+          <div class="testimonial-card-luxury">
+            <div class="testimonial-slider" id="testimonialSlider">
+              <!-- Testimonial 1 -->
+              <div class="slide active">
+                <div class="star-rating">
+                  <span>★</span><span>★</span><span>★</span><span>★</span
+                  ><span>★</span>
+                </div>
+                <p class="testimonial-text">
+                  "My manicures have never looked so exquisite. The precision of
+                  the custom gel overlay and the intricate hand-painted gold
+                  leaf lines at Candy Nails is absolute perfection!"
+                </p>
+                <div class="testimonial-client">
+                  Tasha M.
+                  <span style="font-weight: 300; margin-left: 5px"
+                    >— Google Local Guide</span
+                  >
+                </div>
+              </div>
+
+              <!-- Testimonial 2 -->
+              <div class="slide">
+                <div class="star-rating">
+                  <span>★</span><span>★</span><span>★</span><span>★</span
+                  ><span>★</span>
+                </div>
+                <p class="testimonial-text">
+                  "A perfect haven. The therapeutic Pedicure Spa with warm rose
+                  bath and deep massage therapy is my ultimate weekly self-care
+                  ritual. Unbelievably soothing atmosphere."
+                </p>
+                <div class="testimonial-client">
+                  Marianne K.
+                  <span style="font-weight: 300; margin-left: 5px"
+                    >— Loyal Patron</span
+                  >
+                </div>
+              </div>
+
+              <!-- Testimonial 3 -->
+              <div class="slide">
+                <div class="star-rating">
+                  <span>★</span><span>★</span><span>★</span><span>★</span
+                  ><span>★</span>
+                </div>
+                <p class="testimonial-text">
+                  "Elena and the team are absolute masters of modern nail
+                  trends. I asked for abstract dusty rose marble with subtle
+                  foil and they delivered something even better than my mood
+                  board!"
+                </p>
+                <div class="testimonial-client">
+                  Clarissa R.
+                  <span style="font-weight: 300; margin-left: 5px"
+                    >— Beauty Editor</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-controls">
+              <button
+                class="slider-ctrl-btn"
+                onclick="prevTestimonial()"
+                aria-label="Previous Review"
+              >
+                ←
+              </button>
+              <div class="slider-dots" id="sliderDots">
+                <span class="dot active" onclick="jumpToSlide(0)"></span>
+                <span class="dot" onclick="jumpToSlide(1)"></span>
+                <span class="dot" onclick="jumpToSlide(2)"></span>
+              </div>
+              <button
+                class="slider-ctrl-btn"
+                onclick="nextTestimonial()"
+                aria-label="Next Review"
+              >
+                →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Gallery Preview Section with Interactive Live Category Filter Controls -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">ARTISTIC LOOKBOOK</span>
+          <h2 class="section-title">Prevalent Visual Creations</h2>
+          <p class="section-sub">
+            A curated aesthetic portfolio of bespoke services hand-painted and
+            polished inside Candy Studio.
+          </p>
+        </div>
+
+        <!-- Live Category Selector Filter Tabs -->
+        <div class="gallery-filter-menu" id="galleryFilters">
+          <button class="filter-btn active" data-filter="all">Show All</button>
+          <button class="filter-btn" data-filter="manicure">
+            Couture Manicures
+          </button>
+          <button class="filter-btn" data-filter="art">Custom Art</button>
+          <button class="filter-btn" data-filter="pedicure">
+            Pedicures & Spa
+          </button>
+        </div>
+
+        <!-- Gallery Items matching category data parameters -->
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- Item 1: Gel classic hand -->
+          <div class="gallery-item" data-category="manicure">
+            <div class="gallery-item-inner">
+              <img
+                src="/src/assets/images/manicure_art_1781020545510.png"
+                alt="Rose Quartz luxury style"
+                class="gallery-img"
+                referrerpolicy="no-referrer"
+              />
+              <div class="gallery-overlay">
+                <span class="gallery-item-category">Manicure</span>
+                <h4 class="gallery-item-title">Rose Quartz Gel</h4>
+                <span class="gallery-item-tag"
+                  >High gloss, hard protective finish</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Marble art details -->
+          <div class="gallery-item" data-category="art">
+            <div class="gallery-item-inner">
+              <div class="gallery-gradient-bg">
+                <div class="gallery-gradient-sparkle">✦</div>
+                <img
+                  src="/src/assets/images/hero_nails_studio_1781020527372.png"
+                  alt="Dusty rose marble decals"
+                  class="gallery-img"
+                  style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                  "
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <div class="gallery-overlay">
+                <span class="gallery-item-category">Custom Art</span>
+                <h4 class="gallery-item-title">Blush Pink Marble</h4>
+                <span class="gallery-item-tag"
+                  >Bespoke luxury veins, hand-painted</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Pedicure visual mock -->
+          <div class="gallery-item" data-category="pedicure">
+            <div class="gallery-item-inner">
+              <img
+                src="/src/assets/images/pedicure_spa_1781020563843.png"
+                alt="Luxury therapeutic treatment visual"
+                class="gallery-img"
+                referrerpolicy="no-referrer"
+              />
+              <div class="gallery-overlay">
+                <span class="gallery-item-category">Pedicure & Spa</span>
+                <h4 class="gallery-item-title">Rose Petal Reflexology</h4>
+                <span class="gallery-item-tag"
+                  >Nourishing essential hydration soak</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: Chrome gradient (Soft Gradient design with sparkles) -->
+          <div class="gallery-item" data-category="art">
+            <div class="gallery-item-inner">
+              <div class="gallery-gradient-bg">
+                <div class="gallery-gradient-sparkle" style="font-size: 42px">
+                  ✧
+                </div>
+              </div>
+              <div class="gallery-overlay">
+                <span class="gallery-item-category">Custom Art</span>
+                <h4 class="gallery-item-title">Aura Chrome</h4>
+                <span class="gallery-item-tag"
+                  >Iridescent soft pink aura gradients</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5: Classic French with Gold line (Elegant visual styling) -->
+          <div class="gallery-item" data-category="manicure">
+            <div class="gallery-item-inner">
+              <div
+                class="gallery-gradient-bg"
+                style="
+                  background: linear-gradient(135deg, #fff 0%, #f5d3d6 100%);
+                "
+              >
+                <div
+                  class="gallery-gradient-sparkle"
+                  style="color: var(--color-gold); opacity: 0.4"
+                >
+                  ✦
+                </div>
+              </div>
+              <div class="gallery-overlay">
+                <span class="gallery-item-category">Manicure</span>
+                <h4 class="gallery-item-title">French & Gold Leaf</h4>
+                <span class="gallery-item-tag"
+                  >Micro gold line overlay detailing</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6: Lavender pedi (Mock gradient elegance) -->
+          <div class="gallery-item" data-category="pedicure">
+            <div class="gallery-item-inner">
+              <div
+                class="gallery-gradient-bg"
+                style="
+                  background: linear-gradient(135deg, #faf2f5 0%, #d8c3cd 100%);
+                "
+              >
+                <div class="gallery-gradient-sparkle" style="opacity: 0.3">
+                  ✿
+                </div>
+              </div>
+              <div class="gallery-overlay">
+                <span class="gallery-item-category">Pedicure & Spa</span>
+                <h4 class="gallery-item-title">Lavender Clay Pedi</h4>
+                <span class="gallery-item-tag"
+                  >Detoxifying organic lavender wrap</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Break -->
+    <div class="section-divider">
+      <div class="divider-line"></div>
+    </div>
+
+    <!-- 7. Footer & Contact Form Section -->
+    <footer id="contact">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Logo and Social Info Column -->
+          <div>
+            <div class="footer-logo-title">Candy<span>Nails</span></div>
+            <p class="footer-tagline">
+              Providing sweet moments of luxurious beauty, personalized
+              artistry, and peaceful relaxation in Sweetwater Springs.
+            </p>
+            <div class="footer-socials">
+              <a
+                href="#"
+                class="footer-social-icon"
+                aria-label="Follow Candy Nails on Instagram"
+                ><span>ig</span></a
+              >
+              <a
+                href="#"
+                class="footer-social-icon"
+                aria-label="Follow Candy Nails on Pinterest"
+                ><span>pin</span></a
+              >
+              <a
+                href="#"
+                class="footer-social-icon"
+                aria-label="Follow Candy Nails on Facebook"
+                ><span>fb</span></a
+              >
+              <a
+                href="#"
+                class="footer-social-icon"
+                aria-label="Follow Candy Nails on Twitter"
+                ><span>tw</span></a
+              >
+            </div>
+          </div>
+
+          <!-- Quick navigation -->
+          <div>
+            <h4 class="footer-header">Quick Links</h4>
+            <ul class="footer-links-list">
+              <li><a href="#home" class="footer-link">Home</a></li>
+              <li><a href="#services" class="footer-link">Our Services</a></li>
+              <li><a href="#about" class="footer-link">Loved by Clients</a></li>
+              <li>
+                <a href="#gallery" class="footer-link">Aesthetic Lookbook</a>
+              </li>
+              <li>
+                <a href="#contact" class="footer-link">Contact & Locate</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Hours of boutique operation -->
+          <div>
+            <h4 class="footer-header">Salon Hours</h4>
+            <ul
+              class="footer-links-list"
+              style="font-size: 13px; color: rgba(252, 249, 246, 0.7)"
+            >
+              <li
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  margin-bottom: 8px;
+                "
+              >
+                <span>Monday</span>
+                <span style="font-weight: 600; color: white">9:00 - 19:30</span>
+              </li>
+              <li
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  margin-bottom: 8px;
+                "
+              >
+                <span>Tuesday</span>
+                <span style="font-weight: 600; color: white">9:00 - 19:30</span>
+              </li>
+              <li
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  margin-bottom: 8px;
+                "
+              >
+                <span>Wednesday</span>
+                <span style="font-weight: 600; color: white">9:00 - 19:30</span>
+              </li>
+              <li
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  margin-bottom: 8px;
+                "
+              >
+                <span>Thursday</span>
+                <span style="font-weight: 600; color: white">9:00 - 19:30</span>
+              </li>
+              <li
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  margin-bottom: 8px;
+                "
+              >
+                <span>Friday</span>
+                <span style="font-weight: 600; color: white">9:00 - 19:30</span>
+              </li>
+              <li
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  margin-bottom: 8px;
+                "
+              >
+                <span>Saturday</span>
+                <span style="font-weight: 600; color: white"
+                  >10:00 - 18:00</span
+                >
+              </li>
+              <li
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  margin-bottom: 8px;
+                "
+              >
+                <span>Sunday</span>
+                <span style="font-weight: 600; color: white"
+                  >10:00 - 17:00</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact & Newsletter Input -->
+          <div>
+            <h4 class="footer-header">Locate Us</h4>
+            <div class="footer-info-item">
+              <span class="icon">📍</span>
+              <span
+                >742 Blossom Way, Suite B<br />Sweetwater Springs, CA
+                90210</span
+              >
+            </div>
+            <div class="footer-info-item">
+              <span class="icon">📞</span>
+              <span>+1 (555) 345-6789</span>
+            </div>
+            <div class="footer-info-item" style="margin-bottom: 24px">
+              <span class="icon">✉️</span>
+              <span>hello@candynailsandspa.com</span>
+            </div>
+
+            <!-- Active Newsletter sign up -->
+            <div class="newsletter-box">
+              <h5
+                style="
+                  font-size: 11px;
+                  text-transform: uppercase;
+                  letter-spacing: 0.1em;
+                  color: white;
+                  margin-bottom: 8px;
+                "
+              >
+                Boutique Updates
+              </h5>
+              <div class="newsletter-input-wrap">
+                <input
+                  type="email"
+                  class="newsletter-input"
+                  id="nlEmail"
+                  placeholder="Enter your email"
+                  aria-label="Boutique updates newsletter sign up"
+                />
+                <button class="newsletter-btn" onclick="submitNewsletter()">
+                  Join
+                </button>
+              </div>
+              <div class="newsletter-msg" id="nlFeedback">
+                ✦ You are now subscribed to salon updates!
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright baseline -->
+        <div class="copyright-row">
+          <div>&copy; 2026 CANDY NAILS & SPA. ALL RIGHTS RESERVED.</div>
+          <div style="font-size: 10px; color: rgba(252, 249, 246, 0.35)">
+            Designed with genuine beauty care passion
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Call to Action Appointment Trigger -->
+    <button
+      class="floating-booking-btn"
+      onclick="openBookingModal('General consultation')"
+      aria-label="Instantly Schedule Session"
+    >
+      <span>✦</span> Book Now
+    </button>
+
+    <!-- 8. Interactive Scheduling Dialog Modal Box -->
+    <div
+      class="modal-overlay"
+      id="bookingModalOverlay"
+      onclick="handleOutsideModalClick(event)"
+    >
+      <div class="modal-card">
+        <button
+          class="modal-close-btn"
+          onclick="closeBookingModal()"
+          aria-label="Dismiss schedule form"
+        >
+          ✕
+        </button>
+
+        <!-- Primary Form Elements wrapper -->
+        <div id="bookingFormContext">
+          <div class="modal-header-block">
+            <h3 class="modal-title">Elevate Your Fingertips</h3>
+            <p class="modal-subtitle">
+              Secure your premium beauty treatment at Candy Nails & Spa. We will
+              reach back to confirm your appointment within 1 hour.
+            </p>
+          </div>
+
+          <form
+            class="booking-form"
+            id="actualBookingForm"
+            onsubmit="handleFormSubmission(event)"
+          >
+            <!-- Client details row -->
+            <div class="form-group-row">
+              <div class="form-group">
+                <label class="form-label" for="clientName">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="clientName"
+                  placeholder="Sophia Lin"
+                  required
+                />
+                <div class="error-msg" id="errName">
+                  Please enter your name.
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="clientPhone">Phone Number</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="clientPhone"
+                  placeholder="(555) 000-0000"
+                  required
+                />
+                <div class="error-msg" id="errPhone">
+                  Please enter a valid phone number.
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="clientEmail">Email Address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="clientEmail"
+                placeholder="sophia@example.com"
+                required
+              />
+              <div class="error-msg" id="errEmail">
+                Please enter a valid email.
+              </div>
+            </div>
+
+            <!-- Selection dropdown option blocks -->
+            <div class="form-group-row">
+              <div class="form-group">
+                <label class="form-label" for="serviceSelection"
+                  >Service Tier</label
+                >
+                <select class="form-control" id="serviceSelection" required>
+                  <option value="Gel Manicure">Gel Manicure ($45)</option>
+                  <option value="Acrylic Extensions">
+                    Acrylic Extensions ($65)
+                  </option>
+                  <option value="Custom Nail Art">
+                    Custom Nail Art ($35+)
+                  </option>
+                  <option value="Pedicure Spa">Pedicure Spa ($55)</option>
+                  <option value="Spring Glow-Up Deal">
+                    Spring Glow-Up Deal ($79)
+                  </option>
+                  <option value="General consultation">
+                    General consultation & Check-in
+                  </option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="artistSelection"
+                  >Preferred Specialist</label
+                >
+                <select class="form-control" id="artistSelection" required>
+                  <option value="No preference">First Available Artisan</option>
+                  <option value="Sophia Lin">Sophia Lin (Lead Founder)</option>
+                  <option value="Elena Rose">
+                    Elena Rose (Gel specialist)
+                  </option>
+                  <option value="Chloe Chen">
+                    Chloe Chen (Sculpture & Extension specialist)
+                  </option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Date & Time Row -->
+            <div class="form-group-row">
+              <div class="form-group">
+                <label class="form-label" for="appointmentDate"
+                  >Appointment Date</label
+                >
+                <!-- Enforce today or future inside javascript trigger -->
+                <input
+                  type="date"
+                  class="form-control"
+                  id="appointmentDate"
+                  required
+                />
+                <div class="error-msg" id="errDate">
+                  Please select a future date.
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="appointmentTime"
+                  >Preferred Time Slot</label
+                >
+                <select class="form-control" id="appointmentTime" required>
+                  <option value="09:30 AM">09:30 AM</option>
+                  <option value="11:00 AM">11:00 AM</option>
+                  <option value="12:30 PM">12:30 PM</option>
+                  <option value="02:00 PM">02:00 PM</option>
+                  <option value="03:30 PM">03:30 PM</option>
+                  <option value="05:00 PM">05:00 PM</option>
+                  <option value="06:30 PM">06:30 PM</option>
+                </select>
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-primary"
+              style="width: 100%; margin-top: 10px"
+            >
+              Confirm Reservation Block
+            </button>
+          </form>
+        </div>
+
+        <!-- Live Success Step output dynamically generated -->
+        <div id="bookingSuccessContext" class="booking-success-container">
+          <div class="success-checkmark">✔</div>
+          <h3 class="success-heading">Appointment Booked!</h3>
+          <p class="success-text">
+            Your luxury reservation block has been safely recorded. A details
+            digest has been sent to your email. We look forward to pampering
+            you!
+          </p>
+
+          <div class="appointment-summary-box">
+            <div class="summary-line">
+              <span class="summary-label">Reference ID</span>
+              <span class="summary-value"
+                ><span class="summary-ref-code" id="resRefCode"
+                  >CNS-8491</span
+                ></span
+              >
+            </div>
+            <div class="summary-line">
+              <span class="summary-label">Client Name</span>
+              <span class="summary-value" id="resClient">Sophia Lin</span>
+            </div>
+            <div class="summary-line">
+              <span class="summary-label">Chosen Service</span>
+              <span class="summary-value" id="resService">Gel Manicure</span>
+            </div>
+            <div class="summary-line">
+              <span class="summary-label">Artisan Specialist</span>
+              <span class="summary-value" id="resArtist">No preference</span>
+            </div>
+            <div class="summary-line">
+              <span class="summary-label">Date & Time</span>
+              <span class="summary-value" id="resDateTime"
+                >June 14, 2026 at 02:00 PM</span
+              >
+            </div>
+          </div>
+
+          <button
+            class="btn btn-primary"
+            style="width: 100%"
+            onclick="closeBookingModal()"
+          >
+            Done
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Embedded Vanilla Javascript triggers for interactivity -->
+    <script>
+      // 1. Scroll-Based Header Shifting and Link Active Tracking
+      window.addEventListener("scroll", () => {
+        const header = document.getElementById("mainHdr");
+        if (window.scrollY > 40) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+
+        // Track active scrolling link states
+        const sections = document.querySelectorAll('section, div[id="home"]');
+        const navLinks = document.querySelectorAll(".nav-link");
+        let currentSectionId = "home";
+
+        sections.forEach((sec) => {
+          const top = sec.offsetTop - 120;
+          const height = sec.offsetHeight;
+          if (window.scrollY >= top && window.scrollY < top + height) {
+            currentSectionId = sec.getAttribute("id") || "home";
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${currentSectionId}`) {
+            link.classList.add("active");
+          }
+        });
+      });
+
+      // Set minimum reservation date range to today or later
+      document.addEventListener("DOMContentLoaded", () => {
+        const dateInput = document.getElementById("appointmentDate");
+        if (dateInput) {
+          const today = new Date().toISOString().split("T")[0];
+          dateInput.min = today;
+        }
+      });
+
+      // 2. Mobile Responsive Hamburg Stack Menu Toggling
+      const hmbTrigger = document.getElementById("hamburgerTrigger");
+      const mobileOverlay = document.getElementById("mobileNavOverlay");
+
+      hmbTrigger.addEventListener("click", () => {
+        hmbTrigger.classList.toggle("active");
+        mobileOverlay.classList.toggle("active");
+      });
+
+      function closeMobileNav() {
+        hmbTrigger.classList.remove("active");
+        mobileOverlay.classList.remove("active");
+      }
+
+      // 3. Spring Promo countdown calculations
+      function runSpringCountdown() {
+        // Create a persistent mock countdown targeting 2 days 14 hours 45 minutes into the future relative to the load time
+        // This ensures that visitors in any timezone or date see an active counting promotion that is high-fidelity
+        const countdownDuration =
+          (2 * 24 * 60 * 60 + 14 * 60 * 60 + 45 * 60) * 1000;
+        let targetTime = localStorage.getItem("candy_nails_promo_time");
+
+        if (!targetTime) {
+          targetTime = new Date().getTime() + countdownDuration;
+          localStorage.setItem("candy_nails_promo_time", targetTime);
+        } else {
+          // If the expiration time in LS has already passed, reset it to give a high fidelity ongoing event feel
+          const now = new Date().getTime();
+          if (now > parseInt(targetTime)) {
+            targetTime = now + countdownDuration;
+            localStorage.setItem("candy_nails_promo_time", targetTime);
+          }
+        }
+
+        function updateClock() {
+          const now = new Date().getTime();
+          const difference = parseInt(targetTime) - now;
+
+          if (difference <= 0) {
+            clearInterval(timerInterval);
+            return;
+          }
+
+          const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+          const hours = Math.floor(
+            (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+          );
+          const minutes = Math.floor(
+            (difference % (1000 * 60 * 60)) / (1000 * 60),
+          );
+          const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+          document.getElementById("days").innerText = String(days).padStart(
+            2,
+            "0",
+          );
+          document.getElementById("hours").innerText = String(hours).padStart(
+            2,
+            "0",
+          );
+          document.getElementById("minutes").innerText = String(
+            minutes,
+          ).padStart(2, "0");
+          document.getElementById("seconds").innerText = String(
+            seconds,
+          ).padStart(2, "0");
+        }
+
+        updateClock();
+        const timerInterval = setInterval(updateClock, 1000);
+      }
+
+      runSpringCountdown();
+
+      // 4. Testimonial carousel transitions
+      let currentSlideIndex = 0;
+      const slides = document.querySelectorAll("#testimonialSlider .slide");
+      const dots = document.querySelectorAll("#sliderDots .dot");
+
+      function updateTestimonialSlides() {
+        slides.forEach((slide, idx) => {
+          slide.classList.remove("active");
+          if (dots[idx]) dots[idx].classList.remove("active");
+        });
+        slides[currentSlideIndex].classList.add("active");
+        if (dots[currentSlideIndex])
+          dots[currentSlideIndex].classList.add("active");
+      }
+
+      function nextTestimonial() {
+        currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+        updateTestimonialSlides();
+      }
+
+      function prevTestimonial() {
+        currentSlideIndex =
+          (currentSlideIndex - 1 + slides.length) % slides.length;
+        updateTestimonialSlides();
+      }
+
+      function jumpToSlide(idx) {
+        currentSlideIndex = idx;
+        updateTestimonialSlides();
+      }
+
+      // Auto-advance testimonials every 8 seconds for luxury flow feel
+      setInterval(nextTestimonial, 8000);
+
+      // 5. Interactive Portfolio Gallery filters
+      const filterContainer = document.getElementById("galleryFilters");
+      const galleryItems = document.querySelectorAll(
+        "#galleryGrid .gallery-item",
+      );
+
+      filterContainer.addEventListener("click", (event) => {
+        if (event.target.classList.contains("filter-btn")) {
+          // Toggle Active highlight class on buttons
+          document
+            .querySelectorAll(".filter-btn")
+            .forEach((btn) => btn.classList.remove("active"));
+          event.target.classList.add("active");
+
+          const activeFilter = event.target.getAttribute("data-filter");
+
+          galleryItems.forEach((item) => {
+            const itemCategory = item.getAttribute("data-category");
+            if (activeFilter === "all" || itemCategory === activeFilter) {
+              item.classList.remove("hidden");
+            } else {
+              item.classList.add("hidden");
+            }
+          });
+        }
+      });
+
+      // 6. Interactive Booking Modal overlays logic
+      const bookingOverlay = document.getElementById("bookingModalOverlay");
+      const bFormSection = document.getElementById("bookingFormContext");
+      const bSuccessSection = document.getElementById("bookingSuccessContext");
+
+      function openBookingModal(preselectedService) {
+        bookingOverlay.classList.add("active");
+        bFormSection.style.display = "block";
+        bSuccessSection.style.display = "none";
+
+        // Auto-select corresponding service options based on clicked cards
+        if (preselectedService) {
+          const serviceSelect = document.getElementById("serviceSelection");
+          if (serviceSelect) {
+            serviceSelect.value = preselectedService;
+          }
+        }
+      }
+
+      function closeBookingModal() {
+        bookingOverlay.classList.remove("active");
+      }
+
+      function handleOutsideModalClick(e) {
+        if (e.target === bookingOverlay) {
+          closeBookingModal();
+        }
+      }
+
+      // Form submission validation & Dynamic success block triggers
+      function handleFormSubmission(event) {
+        event.preventDefault();
+
+        // Basic field checking
+        const name = document.getElementById("clientName").value.trim();
+        const phone = document.getElementById("clientPhone").value.trim();
+        const email = document.getElementById("clientEmail").value.trim();
+        const service = document.getElementById("serviceSelection").value;
+        const artist = document.getElementById("artistSelection").value;
+        const date = document.getElementById("appointmentDate").value;
+        const time = document.getElementById("appointmentTime").value;
+
+        // Handle custom random reference token creation
+        const randomRef = "CNS-" + Math.floor(1000 + Math.random() * 9000);
+
+        // Populate Success Summary output text contents
+        document.getElementById("resRefCode").innerText = randomRef;
+        document.getElementById("resClient").innerText = name;
+        document.getElementById("resService").innerText = service;
+        document.getElementById("resArtist").innerText = artist;
+
+        // Format selected date nicely (e.g. "June 14, 2026")
+        const parsedDate = new Date(date);
+        const options = { month: "long", day: "numeric", year: "numeric" };
+        const friendlyDate = parsedDate.toLocaleDateString("en-US", options);
+        document.getElementById("resDateTime").innerText =
+          `${friendlyDate} at ${time}`;
+
+        // Simulate network request and slide sections beautifully
+        bFormSection.style.display = "none";
+        bSuccessSection.style.display = "block";
+
+        // Reset standard form state labels
+        document.getElementById("actualBookingForm").reset();
+      }
+
+      // Newsletter updates
+      function submitNewsletter() {
+        const emailInput = document.getElementById("nlEmail");
+        const feedback = document.getElementById("nlFeedback");
+        if (
+          emailInput &&
+          emailInput.value.trim() !== "" &&
+          emailInput.value.includes("@")
+        ) {
+          feedback.style.display = "block";
+          emailInput.value = "";
+          setTimeout(() => {
+            feedback.style.opacity = "1";
+          }, 100);
+        }
+      }
+    </script>
+  </body>
+</html>
