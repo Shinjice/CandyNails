@@ -480,6 +480,12 @@ header.scrolled .header-container {
   border-left: 3px solid var(--color-gold);
 }
 
+.hero-badge-floating:hover {
+  .hero-badge-title {
+    color: var(--color-rose);
+  }
+}
+
 .hero-badge-floating .star-group {
   color: var(--color-gold);
   font-size: 12px;
@@ -571,7 +577,7 @@ header.scrolled .header-container {
 
 /* 3. Services Section */
 .services-section {
-  padding: 100px 0;
+  padding: 0 0 100px 0;
   background-color: var(--color-cream);
 }
 
@@ -850,7 +856,7 @@ header.scrolled .header-container {
 
 /* 5. About / Trust Testimonial Section */
 .about-section {
-  padding: 100px 0;
+  padding: 0 0 100px 0;
   background-color: var(--color-cream);
 }
 
@@ -1475,6 +1481,11 @@ footer .divider-line::after {
   font-size: 13px;
   color: var(--color-mauve);
   font-weight: 300;
+}
+
+.faq-section {
+  padding: 0 0 100px 0;
+  background-color: var(--color-cream);
 }
 
 /* Form Fields Styling */
