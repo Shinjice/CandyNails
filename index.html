@@ -48,19 +48,20 @@
         <ul class="nav-menu">
           <li><a href="#home" class="nav-link active">Home</a></li>
           <li><a href="#services" class="nav-link">Services</a></li>
-          <li><a href="#about" class="nav-link">Over ons </a></li>
+          <li><a href="#location" class="nav-link">Locatie </a></li>
           <li><a href="#gallery" class="nav-link">Gallery</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
 
         <!-- Desktop CTA -->
         <div class="header-cta">
-          <button
+          <a
             class="btn btn-primary"
-            onclick="openBookingModal('Manicure general')"
+            href="https://candynails-and-spa.salonized.com/widget_bookings/new"
+            target="_blank"
           >
             Boek afspraak
-          </button>
+          </a>
         </div>
 
         <!-- Hamburger button / menu trigger for mobile devices -->
@@ -84,8 +85,8 @@
       <a href="#services" class="mobile-nav-link" onclick="closeMobileNav()"
         >Services</a
       >
-      <a href="#about" class="mobile-nav-link" onclick="closeMobileNav()"
-        >Over ons</a
+      <a href="#location" class="mobile-nav-link" onclick="closeMobileNav()"
+        >Locatie</a
       >
       <a href="#gallery" class="mobile-nav-link" onclick="closeMobileNav()"
         >Gallery</a
@@ -93,15 +94,13 @@
       <a href="#contact" class="mobile-nav-link" onclick="closeMobileNav()"
         >Contact</a
       >
-      <button
+      <a
+        href="https://candynails-and-spa.salonized.com/widget_bookings/new"
+        target="_blank"
         class="btn btn-primary"
-        onclick="
-          closeMobileNav();
-          openBookingModal('General consultation');
-        "
       >
-        Book Service
-      </button>
+        Boek afspraak
+      </a>
     </div>
 
     <!-- Main page container -->
@@ -132,12 +131,13 @@
             resultaat waar je wekenlang van geniet. 🤍
           </p>
           <div class="hero-cta-group">
-            <button
+            <a
               class="btn btn-primary"
-              onclick="openBookingModal('Gel Manicure')"
+              href="https://candynails-and-spa.salonized.com/widget_bookings/new"
+              target="_blank"
             >
               Boek afspraak
-            </button>
+            </a>
             <a href="#services" class="btn btn-secondary">Onze services</a>
           </div>
         </div>
@@ -534,7 +534,7 @@
     </section>
 
     <!-- 4. Promo Section with Dynamic Countdown Banner -->
-    <section class="promo-section">
+    <section class="promo-section" id="location">
       <div class="container promo-grid">
         <div class="promo-content">
           <span class="hero-tag">Locatie</span>
@@ -705,9 +705,9 @@
         <!-- Live Category Selector Filter Tabs -->
         <div class="gallery-filter-menu" id="galleryFilters">
           <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="manicure">Manicure</button>
+          <button class="filter-btn" data-filter="manicure">Acryl</button>
           <button class="filter-btn" data-filter="art">Art</button>
-          <button class="filter-btn" data-filter="pedicure">Pedicure</button>
+          <button class="filter-btn" data-filter="pedicure">Gellak</button>
         </div>
 
         <!-- Gallery Items matching category data parameters -->
@@ -760,7 +760,7 @@
           </div>
 
           <!-- Item 3: Pedicure visual mock -->
-          <div class="gallery-item" data-category="pedicure">
+          <div class="gallery-item" data-category="art">
             <div class="gallery-item-inner">
               <img
                 src="img/3d-ocean-theme.png"
@@ -780,7 +780,7 @@
           </div>
 
           <!-- Item 4: Chrome gradient (Soft Gradient design with sparkles) -->
-          <div class="gallery-item" data-category="art">
+          <div class="gallery-item" data-category="pedicure">
             <div class="gallery-item-inner">
               <div class="gallery-gradient-bg">
                 <img
@@ -801,11 +801,32 @@
           </div>
 
           <!-- Item 5: Classic French with Gold line (Elegant visual styling) -->
+          <div class="gallery-item" data-category="art">
+            <div class="gallery-item-inner">
+              <div class="gallery-gradient-bg">
+                <img
+                  src="img/marmer-look.png"
+                  alt="Luxury therapeutic treatment visual"
+                  class="gallery-img"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <div class="gallery-overlay">
+                <span class="gallery-item-category">Acryl</span>
+                <h4 class="gallery-item-title">Teal marmer look</h4>
+                <span class="gallery-item-tag"
+                  >marmerlook met passende kleurenpallet</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5: Classic French with Gold line (Elegant visual styling) -->
           <div class="gallery-item" data-category="manicure">
             <div class="gallery-item-inner">
               <div class="gallery-gradient-bg">
                 <img
-                  src="img/marmer.png"
+                  src="img/marmer-pink.png"
                   alt="Luxury therapeutic treatment visual"
                   class="gallery-img"
                   referrerpolicy="no-referrer"
@@ -826,17 +847,59 @@
             <div class="gallery-item-inner">
               <div class="gallery-gradient-bg">
                 <img
-                  src="img/golden_french.png"
+                  src="img/baby-boom.png"
                   alt="Luxury therapeutic treatment visual"
                   class="gallery-img"
                   referrerpolicy="no-referrer"
                 />
               </div>
               <div class="gallery-overlay">
-                <span class="gallery-item-category">Gellak</span>
-                <h4 class="gallery-item-title">French & Gold accent</h4>
+                <span class="gallery-item-category">Acryl</span>
+                <h4 class="gallery-item-title">Baby Boom met 3D Art</h4>
                 <span class="gallery-item-tag"
-                  >French set met gold and flowers</span
+                  >Elegant with 3D art and babyboom effect</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5: Classic French with Gold line (Elegant visual styling) -->
+          <div class="gallery-item" data-category="art">
+            <div class="gallery-item-inner">
+              <div class="gallery-gradient-bg">
+                <img
+                  src="img/cate-eye-1.png"
+                  alt="Luxury therapeutic treatment visual"
+                  class="gallery-img"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <div class="gallery-overlay">
+                <span class="gallery-item-category">Acryl</span>
+                <h4 class="gallery-item-title">Cat Eye met gold accents</h4>
+                <span class="gallery-item-tag"
+                  >Micro gold line overlay detailing</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5: Classic French with Gold line (Elegant visual styling) -->
+          <div class="gallery-item" data-category="pedicure">
+            <div class="gallery-item-inner">
+              <div class="gallery-gradient-bg">
+                <img
+                  src="img/french-dots.png"
+                  alt="Luxury therapeutic treatment visual"
+                  class="gallery-img"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <div class="gallery-overlay">
+                <span class="gallery-item-category">Acryl</span>
+                <h4 class="gallery-item-title">French en Dots</h4>
+                <span class="gallery-item-tag"
+                  >Zwarte french met witte dots</span
                 >
               </div>
             </div>
@@ -847,17 +910,36 @@
             <div class="gallery-item-inner">
               <div class="gallery-gradient-bg">
                 <img
-                  src="img/french_chrome.png"
+                  src="img/rose-powder-chrome.png"
                   alt="Luxury therapeutic treatment visual"
                   class="gallery-img"
                   referrerpolicy="no-referrer"
                 />
               </div>
               <div class="gallery-overlay">
-                <span class="gallery-item-category">Manicure</span>
-                <h4 class="gallery-item-title">French & Gold Leaf</h4>
+                <span class="gallery-item-category">Acryl</span>
+                <h4 class="gallery-item-title">Rose Powder Chrome</h4>
+                <span class="gallery-item-tag">Rose powder with chrome</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5: Classic French with Gold line (Elegant visual styling) -->
+          <div class="gallery-item" data-category="pedicure">
+            <div class="gallery-item-inner">
+              <div class="gallery-gradient-bg">
+                <img
+                  src="img/nail-art-fower.png"
+                  alt="Luxury therapeutic treatment visual"
+                  class="gallery-img"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <div class="gallery-overlay">
+                <span class="gallery-item-category">Gellaak</span>
+                <h4 class="gallery-item-title">French and flowers</h4>
                 <span class="gallery-item-tag"
-                  >Micro gold line overlay detailing</span
+                  >Beetje french french met bloemen</span
                 >
               </div>
             </div>
@@ -868,38 +950,19 @@
             <div class="gallery-item-inner">
               <div class="gallery-gradient-bg">
                 <img
-                  src="img/french_chrome.png"
+                  src="img/white-nails.png"
                   alt="Luxury therapeutic treatment visual"
                   class="gallery-img"
                   referrerpolicy="no-referrer"
                 />
               </div>
               <div class="gallery-overlay">
-                <span class="gallery-item-category">Manicure</span>
-                <h4 class="gallery-item-title">French & Gold Leaf</h4>
+                <span class="gallery-item-category">Acryl</span>
+                <h4 class="gallery-item-title">
+                  White powder with gold acccents
+                </h4>
                 <span class="gallery-item-tag"
-                  >Micro gold line overlay detailing</span
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Item 5: Classic French with Gold line (Elegant visual styling) -->
-          <div class="gallery-item" data-category="manicure">
-            <div class="gallery-item-inner">
-              <div class="gallery-gradient-bg">
-                <img
-                  src="img/french_chrome.png"
-                  alt="Luxury therapeutic treatment visual"
-                  class="gallery-img"
-                  referrerpolicy="no-referrer"
-                />
-              </div>
-              <div class="gallery-overlay">
-                <span class="gallery-item-category">Manicure</span>
-                <h4 class="gallery-item-title">French & Gold Leaf</h4>
-                <span class="gallery-item-tag"
-                  >Micro gold line overlay detailing</span
+                  >egaal wit met gouden siersels</span
                 >
               </div>
             </div>
@@ -913,7 +976,7 @@
       <div class="divider-line"></div>
     </div>
 
-    <!-- 6. FAQ Section with Accordion -->
+    <!-- 6. FAQ Section with Accordion
     <section class="faq-section" id="faq">
       <div class="container">
         <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -1001,7 +1064,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- 7. Footer & Contact Form Section -->
     <footer id="contact">
@@ -1051,10 +1114,10 @@
               <li><a href="#services" class="footer-link">Onze Services</a></li>
               <li><a href="#about" class="footer-link">Loved by Clients</a></li>
               <li>
-                <a href="#gallery" class="footer-link">Aesthetic Lookbook</a>
+                <a href="#gallery" class="footer-link">Gallery</a>
               </li>
               <li>
-                <a href="#contact" class="footer-link">Contact & Locate</a>
+                <a href="#contact" class="footer-link">Contact</a>
               </li>
             </ul>
           </div>
@@ -1202,13 +1265,14 @@
     </footer>
 
     <!-- Floating Call to Action Appointment Trigger -->
-    <button
+    <a
       class="floating-booking-btn"
-      onclick="openBookingModal('General consultation')"
+      href="https://candynails-and-spa.salonized.com/widget_bookings/new"
+      target="_blank"
       aria-label="Instantly Schedule Session"
     >
       <span>✦</span> Boek nu
-    </button>
+    </a>
 
     <!-- 8. Interactive Scheduling Dialog Modal Box -->
     <div
