@@ -1,1355 +1,1712 @@
 <!doctype html>
-<html lang="nl" data-theme="light">
-<head>
-  <meta charset="UTF-8" />
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Premium Luxury Nail Boutique in Hoorn, gespecialiseerd in hoogwaardige nagelbehandelingen, van natuurlijke manicures tot opvallende designs. Ontdek onze services en boek vandaag nog een afspraak!" />
+    <meta name="author" content="Candy Nails & Spa">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.candynails.nl/">
+    <title>Candy Nails & Spa | Premium Luxury Nail Boutique</title>
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Candy Nails & Spa — Premium Luxury Nail Boutique in Hoorn">
+    <meta property="og:description" content="Premium Luxury Nail Boutique in Hoorn, gespecialiseerd in hoogwaardige nagelbehandelingen, van natuurlijke manicures tot opvallende designs. Ontdek onze services en boek vandaag nog een afspraak!">
+    <meta property="og:url" content="https://www.candynails.nl/">
+    <meta property="og:image" content="https://www.candynails.nl/img/New_candynails_logo.svg">
+    <meta property="og:site_name" content="Candy Nails & Spa - Gespecialiseerd in hoogwaardige nagelbehandelingen, van natuurlijke manicures tot opvallende designs. Ontdek onze services en boek vandaag nog een afspraak!">
 
-  <!--
-    Theme init: runs before first paint to prevent flash.
-    Reads localStorage or system preference.
-  -->
-  <script>
-    (function () {
-      try {
-        var stored = localStorage.getItem('cn-theme');
-        var dark   = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        if (stored === 'dark' || (!stored && dark)) {
-          document.documentElement.setAttribute('data-theme', 'dark');
-        }
-      } catch (e) {}
-    })();
-  </script>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favo.png" sizes="32x32">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favo.png">
+    <link rel="icon" href="img/favo.png" type="image/svg+xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favo.png">
 
-  <!-- Primary SEO -->
-  <title>Candy Nails &amp; Spa | Nagelstudio in Hoorn centrum 💅 BIAB · Gellak · Acryl</title>
-  <meta name="description"
-        content="Nagelstudio in het centrum van Hoorn 💅 Gespecialiseerd in BIAB, gellak, acrylnagels, nail art, manicure &amp; pedicure. Breed 29, Hoorn. Boek direct online via Salonized!" />
-  <meta name="keywords"
-        content="nagelstudio Hoorn, nagelsalon Hoorn centrum, BIAB Hoorn, gellak Hoorn, acrylnagels Hoorn, manicure Hoorn, pedicure Hoorn, nail art Hoorn, Candy Nails &amp; Spa Hoorn" />
-  <meta name="author"  content="Candy Nails &amp; Spa" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.candynails.nl/" />
+    <!-- Premium Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
 
-  <!-- Open Graph -->
-  <meta property="og:type"        content="website" />
-  <meta property="og:title"       content="Candy Nails &amp; Spa | Nagelstudio in Hoorn centrum 💅" />
-  <meta property="og:description" content="Premium nagelstudio in hartje Hoorn. BIAB, gellak, acryl, nail art, manicure &amp; pedicure. Boek nu online!" />
-  <meta property="og:url"         content="https://www.candynails.nl/" />
-  <meta property="og:image"       content="https://www.candynails.nl/img/wallpaper-hero.jpg" />
-  <meta property="og:locale"      content="nl_NL" />
-  <meta property="og:site_name"   content="Candy Nails &amp; Spa" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card"        content="summary_large_image" />
-  <meta name="twitter:title"       content="Candy Nails &amp; Spa | Nagelstudio in Hoorn centrum 💅" />
-  <meta name="twitter:description" content="Premium nagelstudio in hartje Hoorn. BIAB, gellak, acryl, nail art." />
-  <meta name="twitter:image"       content="https://www.candynails.nl/img/wallpaper-hero.jpg" />
-
-  <!-- Theme color -->
-  <meta name="theme-color" content="#fdf8f7" media="(prefers-color-scheme: light)" />
-  <meta name="theme-color" content="#0f0408"  media="(prefers-color-scheme: dark)" />
-
-  <!-- Favicons -->
-  <link rel="icon"             href="img/favo.png" sizes="any" />
-  <link rel="icon"             href="img/favo.png" type="image/png" />
-  <link rel="apple-touch-icon" href="img/favo.png" />
-
-  <!-- Resource hints -->
-  <link rel="preconnect"             href="https://fonts.googleapis.com" />
-  <link rel="preconnect"             href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload"                href="img/wallpaper-hero.jpg" as="image" fetchpriority="high" />
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet" />
-
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles.css" />
-
-  <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
+      <script type="application/ld+json">
       {
-        "@type": "NailSalon",
-        "@id": "https://www.candynails.nl/#business",
+        "@context": "https://schema.org",
+        "@type": "Organization",
         "name": "Candy Nails & Spa",
-        "description": "Premium nagelstudio in het centrum van Hoorn, gespecialiseerd in BIAB, gellak, acrylnagels, nail art, manicure en pedicure.",
         "url": "https://www.candynails.nl/",
-        "logo": "https://www.candynails.nl/img/New_candynails_logo.svg",
-        "image": "https://www.candynails.nl/img/wallpaper-hero.jpg",
-        "telephone": "+31646038269",
-        "priceRange": "€15 – €65",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Breed 29",
-          "addressLocality": "Hoorn",
-          "postalCode": "1628BG",
-          "addressRegion": "Noord-Holland",
-          "addressCountry": "NL"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 52.6424347720934,
-          "longitude": 5.05149817746425
-        },
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday","Tuesday","Wednesday","Friday","Saturday"],
-            "opens": "10:00",
-            "closes": "18:00"
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Thursday",
-            "opens": "10:00",
-            "closes": "20:00"
-          }
-        ],
-        "sameAs": [
-          "https://www.instagram.com/candynailsenspa/",
-          "https://www.facebook.com/profile.php?id=100066663679984"
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Hoe lang blijft BIAB of gellak zitten?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "BIAB en gellak blijven gemiddeld 3 tot 4 weken mooi zitten zonder te chippen. BIAB versterkt bovendien de natuurlijke nagel, wat het extra duurzaam maakt. Na 3 à 4 weken raden wij een refill of bijvulling aan, zodat je nagels er altijd verzorgd uitzien."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Moet ik vooraf een afspraak maken of kan ik binnenlopen?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Wij werken voornamelijk op afspraak, zodat we je de aandacht en tijd kunnen geven die je verdient. Je kunt eenvoudig online boeken via Salonized. Binnenlopen kan, maar is afhankelijk van beschikbaarheid. Voor een gegarandeerde plek raden we online reserveren aan."
-            }
-          }
-        ]
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://www.candynails.nl/#website",
-        "url": "https://www.candynails.nl/",
-        "name": "Candy Nails & Spa",
-        "description": "Nagelstudio in het centrum van Hoorn"
+        "logo": "https://www.candynails.nl/img/New_candynails_logo.svg"
       }
-    ]
-  }
   </script>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- Floating Luxury Accent border frame -->
+    <div class="page-frame"></div>
 
-  <!-- Skip to main content (accessibility) -->
-  <a href="#main-content" class="skip-link">Ga naar hoofdinhoud</a>
-
-  <!-- Custom cursor glow (desktop only, driven by JS) -->
-  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
-
-  <!-- ══════════════════════════════════════
-       HEADER
-  ══════════════════════════════════════ -->
-  <header class="hdr" id="hdr" role="banner">
-    <div class="hdr__inner">
-
-      <!-- Logo -->
-      <a href="#home" class="hdr__logo" aria-label="Candy Nails & Spa – terug naar boven">
-        <img src="img/New_candynails_logo.svg"
-             alt="Candy Nails &amp; Spa logo"
-             width="130" height="44"
-             decoding="async" />
-      </a>
-
-      <!-- Desktop navigation -->
-      <nav class="hdr__nav" aria-label="Hoofdnavigatie">
-        <ul class="nav__list" role="list">
-          <li><a href="#home"     class="nav__link active">Home</a></li>
-          <li><a href="#services" class="nav__link">Services</a></li>
-          <li><a href="#reviews"  class="nav__link">Reviews</a></li>
-          <li><a href="#gallery"  class="nav__link">Gallery</a></li>
-          <li><a href="#contact"  class="nav__link">Contact</a></li>
-        </ul>
-      </nav>
-
-      <!-- Header actions -->
-      <div class="hdr__actions">
-        <!-- Theme toggle -->
-        <button class="theme-toggle" id="themeToggle"
-                aria-label="Schakel donker/licht modus"
-                title="Donker / licht modus">
-          <i class="bi bi-sun-fill theme-toggle__sun"   aria-hidden="true"></i>
-          <i class="bi bi-moon-stars-fill theme-toggle__moon" aria-hidden="true"></i>
-        </button>
-
-        <!-- Booking CTA (desktop) -->
-        <a href="https://candynails-and-spa.salonized.com/widget_bookings/new"
-           class="btn btn--primary hdr__cta"
-           target="_blank" rel="noopener noreferrer"
-           aria-label="Boek een afspraak bij Candy Nails &amp; Spa">
-          Boek nu 💅
+    <!-- Header -->
+    <header id="mainHdr">
+      <div class="container header-container">
+        <!-- Logo -->
+        <a href="#home" class="logo-container">
+          <!-- <div class="logo-text">Candy<span>Nails</span></div>
+          <div class="logo-sub">& Spa</div> -->
+          <img
+            src="img/New_candynails_logo.svg"
+            alt="Candy Nails & Spa Logo"
+            class="logo-img"
+            referrerpolicy="no-referrer"
+            width="140"
+          />
         </a>
 
-        <!-- Hamburger (mobile) -->
-        <button class="hamburger" id="hamburgerBtn"
-                aria-label="Menu openen"
-                aria-expanded="false"
-                aria-controls="mobileNav">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
+        <!-- Desktop Nav -->
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#location" class="nav-link">Locatie </a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Desktop CTA -->
+        <div class="header-cta">
+          <a
+            class="btn btn-primary"
+            href="https://candynails-and-spa.salonized.com/widget_bookings/new"
+            target="_blank"
+          >
+            Boek afspraak
+          </a>
+        </div>
+
+        <!-- Hamburger button / menu trigger for mobile devices -->
+        <button
+          class="hamburger"
+          id="hamburgerTrigger"
+          aria-label="Toggle Navigation Stack"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
       </div>
+    </header>
 
-    </div>
-  </header>
-
-  <!-- ══════════════════════════════════════
-       MOBILE NAV (full-screen overlay)
-  ══════════════════════════════════════ -->
-  <div class="mobile-nav" id="mobileNav"
-       aria-hidden="true"
-       role="dialog"
-       aria-label="Navigatiemenu">
-    <div class="mobile-nav__content">
-      <nav aria-label="Mobiele navigatie">
-        <ul class="mobile-nav__list" role="list">
-          <li class="mobile-nav__item">
-            <a href="#home"     class="mobile-nav__link">✦ Home</a>
-          </li>
-          <li class="mobile-nav__item">
-            <a href="#services" class="mobile-nav__link">✦ Services</a>
-          </li>
-          <li class="mobile-nav__item">
-            <a href="#reviews"  class="mobile-nav__link">✦ Reviews</a>
-          </li>
-          <li class="mobile-nav__item">
-            <a href="#gallery"  class="mobile-nav__link">✦ Gallery</a>
-          </li>
-          <li class="mobile-nav__item">
-            <a href="#contact"  class="mobile-nav__link">✦ Contact</a>
-          </li>
-        </ul>
-      </nav>
-
-      <a href="https://candynails-and-spa.salonized.com/widget_bookings/new"
-         class="btn btn--primary btn--large"
-         target="_blank" rel="noopener noreferrer">
-        Boek afspraak 💅
+    <!-- Sliding Mobile Nav Link List Backdrop Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay">
+      <a href="#home" class="mobile-nav-link" onclick="closeMobileNav()"
+        >Home</a
+      >
+      <a href="#services" class="mobile-nav-link" onclick="closeMobileNav()"
+        >Services</a
+      >
+      <a href="#location" class="mobile-nav-link" onclick="closeMobileNav()"
+        >Locatie</a
+      >
+      <a href="#gallery" class="mobile-nav-link" onclick="closeMobileNav()"
+        >Gallery</a
+      >
+      <a href="#contact" class="mobile-nav-link" onclick="closeMobileNav()"
+        >Contact</a
+      >
+      <a
+        href="https://candynails-and-spa.salonized.com/widget_bookings/new"
+        target="_blank"
+        class="btn btn-primary"
+      >
+        Boek afspraak
       </a>
-
-      <div class="mobile-nav__socials">
-        <a href="https://www.instagram.com/candynailsenspa/"
-           target="_blank" rel="noopener noreferrer"
-           aria-label="Volg Candy Nails &amp; Spa op Instagram">
-          <i class="bi bi-instagram" aria-hidden="true"></i>
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=100066663679984"
-           target="_blank" rel="noopener noreferrer"
-           aria-label="Volg Candy Nails &amp; Spa op Facebook">
-          <i class="bi bi-facebook" aria-hidden="true"></i>
-        </a>
-        <a href="https://share.google/IUBSr1PeJHMTSULtn"
-           target="_blank" rel="noopener noreferrer"
-           aria-label="Bekijk Candy Nails &amp; Spa op Google">
-          <i class="bi bi-google" aria-hidden="true"></i>
-        </a>
-      </div>
-
-      <p class="mobile-nav__address">📍 Breed 29, Hoorn centrum</p>
     </div>
-  </div>
 
-  <!-- ══════════════════════════════════════
-       MAIN CONTENT
-  ══════════════════════════════════════ -->
-  <main id="main-content">
+    <!-- Main page container -->
+    <div id="home"></div>
 
-    <!-- ── 1. HERO ─────────────────────────── -->
-    <section class="hero" id="home" aria-labelledby="heroHeading">
-
-      <!-- Background image + overlay -->
-      <div class="hero__bg" aria-hidden="true">
-        <img src="img/wallpaper-hero.jpg"
-             alt=""
-             width="1920" height="1080"
-             fetchpriority="high" />
-        <div class="hero__overlay"></div>
+    <!-- 2. Hero Section -->
+    <section class="hero-section">
+      <!-- Liquid graphic blobs for premium feeling -->
+      <div class="hero-bg-blobs">
+        <div class="blob-1"></div>
+        <div class="blob-2"></div>
       </div>
 
-      <!-- Sparkle particle canvas -->
-      <canvas class="hero__sparkles" id="sparkleCanvas" aria-hidden="true"></canvas>
-
-      <!-- Content grid -->
-      <div class="hero__inner">
-
-        <!-- Text column -->
-        <div class="hero__text" data-reveal="slide-right">
-          <p class="hero__eyebrow">💎 Premium nagelstudio in hartje Hoorn</p>
-
-          <h1 class="hero__title" id="heroHeading">
-            Nagelstudio in<br>
-            Hoorn <span class="hero__title-accent">centrum</span>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-tag">Elegantie tot in de kleinste details</div>
+          <h1 class="hero-title">
+            Jouw schoonheid begint bij perfect verzorgde <span>nagels</span>
           </h1>
-
-          <p class="hero__slogan">Glow up begint bij je vingertoppen ✨</p>
-
-          <p class="hero__desc">
-            Gun jezelf de glamour die je verdient. Ervaar hoogwaardige nagelverzorging
-            met persoonlijke aandacht en een resultaat dat weken mooi blijft.
-            Jouw schoonheid, onze passie. 💅
+          <p class="hero-subheading">
+            Gun jezelf een moment van ontspanning en stap naar buiten met nagels
+            die gezien mogen worden. ✨ Of je nu kiest voor een natuurlijke
+            look, BIAB of een opvallend design, wij zorgen voor een perfecte
+            afwerking die bij jouw stijl past. 💅
           </p>
-
-          <div class="hero__cta-group">
-            <a href="https://candynails-and-spa.salonized.com/widget_bookings/new"
-               class="btn btn--primary btn--large btn--glow"
-               target="_blank" rel="noopener noreferrer">
-              Boek je afspraak 💖
+          <p class="hero-subheading">
+            Ervaar persoonlijke aandacht, hoogwaardige producten en een
+            resultaat waar je wekenlang van geniet. 🤍
+          </p>
+          <div class="hero-cta-group">
+            <a
+              class="btn btn-primary"
+              href="https://candynails-and-spa.salonized.com/widget_bookings/new"
+              target="_blank"
+            >
+              Boek afspraak
             </a>
-            <a href="#services" class="btn btn--ghost btn--large">
-              Bekijk services ↓
-            </a>
+            <a href="#services" class="btn btn-secondary">Onze services</a>
           </div>
         </div>
 
-        <!-- Visual column -->
-        <div class="hero__visual" data-reveal="slide-left">
-          <div class="hero__img-frame">
-            <img src="img/Bentley.webp"
-                 alt="Prachtig verzorgde nagels bij Candy Nails &amp; Spa in Hoorn"
-                 class="hero__img"
-                 width="480" height="560"
-                 fetchpriority="high"
-                 decoding="async" />
-            <div class="hero__img-glow" aria-hidden="true"></div>
-          </div>
+        <div class="hero-image-container">
+          <div class="hero-image-frame">
+            <!-- Real generated premium asset -->
+            <img
+              src="img/Bentley.webp"
+              alt="Exquisite manicured nails visual"
+              class="hero-img"
+              referrerpolicy="no-referrer"
+            />
 
-          <!-- Google Reviews floating badge -->
-          <a href="https://www.google.com/search?q=candy+nails+hoorn"
-             class="hero__badge"
-             target="_blank" rel="noopener noreferrer"
-             aria-label="Bekijk onze Google beoordelingen: 4.8 sterren">
-            <div class="hero__badge-logo">
-              <!-- Google G logo (inline SVG, no external request) -->
-              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
-                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
-                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
-                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
-                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
-              </svg>
-            </div>
-            <div class="hero__badge-body">
-              <div class="hero__badge-stars" aria-hidden="true">★★★★★</div>
-              <div class="hero__badge-text">
-                <strong>4.8</strong> beoordeeld door onze klanten
+            <!-- Interactive Floating Badge -->
+            <a
+              href="https://www.google.com/search?q=candy+nails+hoorn&sca_esv=1c22e5aede185c87&biw=1170&bih=654&sxsrf=APpeQnsXE-I7B4_Ikiohh2oh4Ic0Nfibag%3A1784221926423&ei=5hBZap-tGaWIi-gP5ZKzuAU&ved=0ahUKEwifuP_Q2NeVAxUlxAIHHWXJDFcQ4dUDCBA&uact=5&oq=candy+nails+hoorn&gs_lp=Egxnd3Mtd2l6LXNlcnAiEWNhbmR5IG5haWxzIGhvb3JuMgQQIxgnMgQQIxgnMgQQIxgnMhAQLhhDGK8BGMcBGIAEGIoFMgUQABiABDIGEAAYFhgeMgYQABgWGB4yAhAmMggQABiJBRiiBDIIEAAYiQUYogRIpyRQAFiDH3AEeAGQAQCYAW6gAbcMqgEEMjAuMbgBA8gBAPgBAZgCGaACjw3CAhAQLhiABBiKBRhDGMcBGK8BwgIKEAAYgAQYigUYQ8ICChAuGIAEGIoFGEPCAg4QLhiABBiKBRixAxiDAcICDhAAGIAEGIoFGI0GGLEDwgIOEC4YgAQYsQMYxwEY0QPCAgYQABgDGArCAggQABiABBixA8ICCBAuGIAEGLEDwgITEC4YQxjHARixAxjRAxiABBiKBcICCxAAGIAEGLEDGIMBwgINEAAYgAQYigUYQxixA8ICIhAuGEMYxwEYsQMY0QMYgAQYigUYlwUY3AQY3gQY4ATYAQHCAhMQLhiABBiKBRhDGLEDGMcBGK8BwgIMEAAYgAQYChgLGLEDwgIJEAAYgAQYChgLwgIMEC4YgAQYChgLGLEDwgIHECMYsQIYJ8ICDxAuGIAEGAoYCxjHARivAcICCBAuGIAEGMsBwgISEC4YgAQYChgLGLEDGMcBGK8BwgIJEC4YgAQYChgLwgIIEAAYgAQYywHCAgoQABiABBjLARgKwgIFEC4YgATCAg4QLhiABBjHARivARiOBcICCxAAGIAEGMsBGMkDwgILEAAYgAQYigUYkgOYAwC6BgYIARABGBSSBwQyNC4xoAeI9wKyBwQyMC4xuAeEDcIHBjAuMjIuM8gHPoAIAQ&sclient=gws-wiz-serp"
+              target="_blank"
+            >
+              <div class="hero-badge-floating">
+                <div>
+                  <div class="star-group">★ ★ ★ ★ ★</div>
+                  <div class="hero-badge-title">
+                    <div class="d-flex">
+                      <div class="me-1">
+                        <img
+                          src="https://fonts.gstatic.com/s/i/productlogos/googleg/v6/24px.svg"
+                          alt="Logo"
+                          width="15"
+                          height="15"
+                        />
+                      </div>
+                      <div>Klik hier voor Google Reviews</div>
+                    </div>
+                  </div>
+                  <div class="hero-badge-sub">
+                    beoordeerld door onze klanten met
+                    <strong>4.8</strong> sterren
+                  </div>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
-
       </div>
-
-      <!-- Scroll indicator -->
-      <div class="hero__scroll-hint" aria-hidden="true">
-        <div class="hero__scroll-dot"></div>
-      </div>
-
     </section>
-    <!-- ── end Hero ─── -->
 
-
-    <!-- ── 2. MARQUEE SLOGANS ─────────────── -->
-    <div class="marquee" aria-hidden="true" role="presentation">
-      <div class="marquee__track">
-        <span class="marquee__item">✦ Jouw nagels, jouw statement 💅</span>
-        <span class="marquee__item">✦ Glow up begint bij je vingertoppen ✨</span>
-        <span class="marquee__item">✦ Mooie nagels, nog mooiere dag 💖</span>
-        <span class="marquee__item">✦ Even jij-tijd in hartje Hoorn 🌸</span>
-        <span class="marquee__item">✦ Klein kunstwerkje, grote glimlach 💎</span>
-        <span class="marquee__item">✦ Candy Nails &amp; Spa · Breed 29 · Hoorn</span>
-        <span class="marquee__item">✦ BIAB · Gellak · Acryl · Nail Art 💅</span>
-        <!-- Duplicate for seamless infinite loop -->
-        <span class="marquee__item">✦ Jouw nagels, jouw statement 💅</span>
-        <span class="marquee__item">✦ Glow up begint bij je vingertoppen ✨</span>
-        <span class="marquee__item">✦ Mooie nagels, nog mooiere dag 💖</span>
-        <span class="marquee__item">✦ Even jij-tijd in hartje Hoorn 🌸</span>
-        <span class="marquee__item">✦ Klein kunstwerkje, grote glimlach 💎</span>
-        <span class="marquee__item">✦ Candy Nails &amp; Spa · Breed 29 · Hoorn</span>
-        <span class="marquee__item">✦ BIAB · Gellak · Acryl · Nail Art 💅</span>
-      </div>
+    <!-- Section Break -->
+    <div class="section-divider">
+      <div class="divider-line"></div>
     </div>
 
-
-    <!-- ── 3. SERVICES ────────────────────── -->
-    <section class="services" id="services" aria-labelledby="servicesHeading">
+    <!-- 3. Our Signature Services Section -->
+    <section class="services-section" id="services">
       <div class="container">
-
-        <div class="section-header" data-reveal="fade">
-          <span class="section-tag">💅 Wat wij doen</span>
-          <h2 class="section-title" id="servicesHeading">
-            Nagelsalon in Hoorn <span class="text-accent">centrum</span>
-          </h2>
+        <div class="section-header">
+          <span class="hero-tag">Service at it finest</span>
+          <h2 class="section-title">Onze hoogwaardige services</h2>
           <p class="section-sub">
-            Van een strakke natural look tot opvallende nail art die iedereen doet opkijken —
-            bij Candy Nails &amp; Spa is alles mogelijk. 🌸 Kies jouw favoriete behandeling
-            en wij zorgen voor de rest.
+            Ontdek onze verschillende nagelbehandelingen en laat je inspireren
+            door de mogelijkheden. 💅 Van een natuurlijke manicure en BIAB tot
+            prachtige nail art en verzorgde designs — er is voor iedere stijl
+            iets bijzonders. ✨
+          </p>
+          <p class="section-sub">
+            Met persoonlijke aandacht en oog voor detail zorgen we ervoor dat
+            jouw nagels er perfect verzorgd uitzien. 🤍 Bekijk onze services
+            hieronder en ontdek welke behandeling het beste bij jou past. 🌸
           </p>
         </div>
 
-        <div class="services__grid">
-
-          <!-- Acrylnagels -->
-          <article class="service-card" data-reveal="fade" data-delay="0">
-            <div class="service-card__img-wrap">
-              <img src="img/Acrylnagels.jpg"
-                   alt="Acrylnagels Hoorn – sterke nagels bij Candy Nails"
-                   class="service-card__img"
-                   width="400" height="300"
-                   loading="lazy" decoding="async" />
-              <span class="service-card__price">Vanaf €45,-</span>
+        <div class="services-grid">
+          <!-- Card 2: Acrylic Nails extension -->
+          <div class="service-card">
+            <div class="service-img-wrapper">
+              <span class="service-price-badge">vanaf €45,-</span>
+              <!-- Real custom generated asset for manicure bottles -->
+              <img
+                src="img/Acrylnagels.jpg"
+                alt="Acrylnagels"
+                class="service-card-img"
+                referrerpolicy="no-referrer"
+              />
             </div>
-            <div class="service-card__body">
-              <h3 class="service-card__title">💎 Acrylnagels</h3>
-              <p class="service-card__desc">
-                Sterke, perfect gevormde nagels met een luxe uitstraling.
-                Wekenlang genieten van een verzorgde en zelfverzekerde look.
+            <div class="service-card-content">
+              <h3 class="service-card-title">Acrylnagels</h3>
+              <p class="service-card-desc">
+                Acrylnagels geven je sterke, perfect gevormde nagels met een
+                luxe uitstraling, zodat je wekenlang geniet van een verzorgde en
+                zelfverzekerde look.
               </p>
-            </div>
-          </article>
-
-          <!-- BIAB -->
-          <article class="service-card" data-reveal="fade" data-delay="100">
-            <div class="service-card__img-wrap">
-              <img src="img/BIAB.png"
-                   alt="BIAB nagels Hoorn – Builder in a Bottle bij Candy Nails &amp; Spa"
-                   class="service-card__img"
-                   width="400" height="300"
-                   loading="lazy" decoding="async" />
-              <span class="service-card__price">Vanaf €40,-</span>
-            </div>
-            <div class="service-card__body">
-              <h3 class="service-card__title">✨ BIAB</h3>
-              <p class="service-card__desc">
-                Builder in a Bottle: verstevigende gellak die je nagels sterker maakt
-                én helpt groeien. Ideaal voor broze of breekbare nagels.
-              </p>
-            </div>
-          </article>
-
-          <!-- Rubberbase -->
-          <article class="service-card" data-reveal="fade" data-delay="200">
-            <div class="service-card__img-wrap">
-              <img src="img/Rubberbase.png"
-                   alt="Rubberbase nagels Hoorn bij Candy Nails &amp; Spa"
-                   class="service-card__img"
-                   width="400" height="300"
-                   loading="lazy" decoding="async" />
-              <span class="service-card__price">Vanaf €35,-</span>
-            </div>
-            <div class="service-card__body">
-              <h3 class="service-card__title">🌸 Rubberbase</h3>
-              <p class="service-card__desc">
-                Hetzelfde als BIAB maar zonder kleur. De perfecte basis om te combineren
-                met jouw favoriete gellakkleur.
-              </p>
-            </div>
-          </article>
-
-          <!-- Gellak -->
-          <article class="service-card" data-reveal="fade" data-delay="0">
-            <div class="service-card__img-wrap">
-              <img src="img/Gellak.png"
-                   alt="Gellak Hoorn – weken lang mooie nagels bij Candy Nails &amp; Spa"
-                   class="service-card__img"
-                   width="400" height="300"
-                   loading="lazy" decoding="async" />
-              <span class="service-card__price">Vanaf €25,-</span>
-            </div>
-            <div class="service-card__body">
-              <h3 class="service-card__title">💅 Gellak</h3>
-              <p class="service-card__desc">
-                Langdurige nagellak die uithardt onder UV/LED-lamp. Tot weken mooi,
-                geen chipping. In alle kleuren beschikbaar.
-              </p>
-            </div>
-          </article>
-
-          <!-- Nail Art -->
-          <article class="service-card" data-reveal="fade" data-delay="100">
-            <div class="service-card__img-wrap">
-              <img src="img/nailart.png"
-                   alt="Nail art Hoorn – creatieve nagelkunst bij Candy Nails &amp; Spa"
-                   class="service-card__img"
-                   width="400" height="300"
-                   loading="lazy" decoding="async" />
-              <span class="service-card__price">Vanaf €5,-</span>
-            </div>
-            <div class="service-card__body">
-              <h3 class="service-card__title">🎨 Nail Art</h3>
-              <p class="service-card__desc">
-                Creatief versieren met designs, kleuren, glitters, steentjes of andere
-                decoraties. Jouw unieke look, jouw stijl!
-              </p>
-            </div>
-          </article>
-
-          <!-- Gellak Tenen -->
-          <article class="service-card" data-reveal="fade" data-delay="200">
-            <div class="service-card__img-wrap">
-              <img src="img/Gellak_voeten.png"
-                   alt="Gellak tenen Hoorn bij Candy Nails &amp; Spa"
-                   class="service-card__img"
-                   width="400" height="300"
-                   loading="lazy" decoding="async" />
-              <span class="service-card__price">Vanaf €25,-</span>
-            </div>
-            <div class="service-card__body">
-              <h3 class="service-card__title">🌸 Gellak Tenen</h3>
-              <p class="service-card__desc">
-                Gellak ook voor je teennagels! In alle kleuren mogelijk,
-                voor perfecte voeten het hele jaar door.
-              </p>
-            </div>
-          </article>
-
-          <!-- Pedicure -->
-          <article class="service-card" data-reveal="fade" data-delay="0">
-            <div class="service-card__img-wrap">
-              <img src="img/pedicure.png"
-                   alt="Pedicure Hoorn bij Candy Nails &amp; Spa"
-                   class="service-card__img"
-                   width="400" height="300"
-                   loading="lazy" decoding="async" />
-              <span class="service-card__price">Vanaf €40,-</span>
-            </div>
-            <div class="service-card__body">
-              <h3 class="service-card__title">💆 Pedicure</h3>
-              <p class="service-card__desc">
-                Verwenbeurt inclusief voetenbad, eelt verwijderen, nagelriem knippen,
-                vijlen, scrub &amp; massage. Met luxe massagestoel! 🛁
-              </p>
-            </div>
-          </article>
-
-          <!-- Manicure -->
-          <article class="service-card" data-reveal="fade" data-delay="100">
-            <div class="service-card__img-wrap">
-              <img src="img/manicure.png"
-                   alt="Manicure Hoorn bij Candy Nails &amp; Spa"
-                   class="service-card__img"
-                   width="400" height="300"
-                   loading="lazy" decoding="async" />
-              <span class="service-card__price">Vanaf €15,-</span>
-            </div>
-            <div class="service-card__body">
-              <h3 class="service-card__title">💖 Manicure</h3>
-              <p class="service-card__desc">
-                Nagelriem bijknippen, nagels vijlen en knippen.
-                Jouw handen in top vorm — snel en professioneel!
-              </p>
-            </div>
-          </article>
-
-        </div><!-- /services__grid -->
-
-        <div class="services__cta" data-reveal="fade">
-          <a href="https://candynails-and-spa.salonized.com/widget_bookings/new"
-             class="btn btn--primary btn--large"
-             target="_blank" rel="noopener noreferrer">
-            Bekijk alle opties en boek direct 💅
-          </a>
-        </div>
-
-      </div>
-    </section>
-    <!-- ── end Services ─── -->
-
-
-    <!-- ── 4. BENTLEY (shop dog) ──────────── -->
-    <section class="bentley" aria-labelledby="bentleyHeading">
-      <div class="container">
-        <div class="bentley__grid">
-
-          <div class="bentley__content" data-reveal="slide-right">
-            <span class="section-tag">🐾 Maak kennis met</span>
-            <h2 class="section-title" id="bentleyHeading">
-              Bentley, onze <span class="text-accent">bedrijfshond!</span> 🐶
-            </h2>
-            <p class="bentley__text">
-              Bentley is onze vrolijke en speelse viervoeter die bijna altijd gezellig aanwezig is. 🐾
-              Met zijn enthousiaste karakter en kwispelende staart zorgt hij regelmatig voor extra
-              gezelligheid en een glimlach op je gezicht.
-            </p>
-            <p class="bentley__text">
-              Hij is dol op aandacht, spelen en natuurlijk een lekkere knuffel. 🤍 Wil je Bentley
-              graag ontmoeten? Kom dan gerust eens langs — hij kijkt ernaar uit je te begroeten! ❤️
-            </p>
-            <p class="bentley__quote">
-              "Nagels laten doen én een knuffel van Bentley?<br>
-              Nog een reden om te boeken! 🐶"
-            </p>
-          </div>
-
-          <div class="bentley__visual" data-reveal="slide-left">
-            <div class="bentley__img-wrap">
-              <img src="img/bentley-frame.jpeg"
-                   alt="Bentley, de vrolijke bedrijfshond van Candy Nails &amp; Spa in Hoorn"
-                   class="bentley__img"
-                   width="480" height="560"
-                   loading="lazy" decoding="async" />
-              <div class="bentley__paw" aria-hidden="true">🐾</div>
+       <a
+              class="btn btn-primary"
+              href="https://candynails-and-spa.salonized.com/widget_bookings/new"
+              target="_blank"
+            >
+              Boek afspraak
+            </a>
             </div>
           </div>
 
-        </div>
-      </div>
-    </section>
-    <!-- ── end Bentley ─── -->
-
-
-    <!-- ── 5. SOCIAL MEDIA ───────────────── -->
-    <section class="social" aria-labelledby="socialHeading">
-      <div class="container">
-        <div class="social__grid">
-
-          <div class="social__visual" data-reveal="slide-right">
-            <div class="social__img-wrap">
-              <img src="img/insta-nails.png"
-                   alt="Candy Nails &amp; Spa nagelinspirate op Instagram – Hoorn"
-                   class="social__img"
-                   width="480" height="480"
-                   loading="lazy" decoding="async" />
+          <!-- Card 1: BIAB -->
+          <div class="service-card">
+            <div class="service-img-wrapper">
+              <span class="service-price-badge">Vanaf €40,-</span>
+              <!-- Real custom generated asset for manicure -->
+              <img
+                src="img/BIAB.png"
+                alt="Gel Manicure illustration"
+                class="service-card-img"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+            <div class="service-card-content">
+              <h3 class="service-card-title">BIAB</h3>
+              <p class="service-card-desc">
+                BIAB (Builder in a Bottle) is een verstevigende gellak die op de
+                natuurlijke nagel wordt aangebracht om deze sterker te maken en
+                te laten groeien zonder snel af te breken.
+              </p>
+       <a
+              class="btn btn-primary"
+              href="https://candynails-and-spa.salonized.com/widget_bookings/new"
+              target="_blank"
+            >
+              Boek afspraak
+            </a>
             </div>
           </div>
 
-          <div class="social__content" data-reveal="slide-left">
-            <span class="section-tag">📲 Volg ons</span>
-            <h2 class="section-title" id="socialHeading">
-              Dagelijkse inspiratie op <span class="text-accent">Social Media</span>
-            </h2>
-            <p class="social__text">
-              💅 Volg ons op Instagram en Facebook voor de mooiste nagelcreaties,
-              seizoensthema's en exclusieve acties. Laat je inspireren en ontdek
-              jouw volgende favoriete look! 🌸
-            </p>
-            <div class="social__icons">
-              <a href="https://www.instagram.com/candynailsenspa/"
-                 target="_blank" rel="noopener noreferrer"
-                 class="social__icon social__icon--instagram"
-                 aria-label="Volg Candy Nails &amp; Spa op Instagram">
-                <i class="bi bi-instagram" aria-hidden="true"></i>
-                <span>Instagram</span>
-              </a>
-              <a href="https://www.facebook.com/profile.php?id=100066663679984"
-                 target="_blank" rel="noopener noreferrer"
-                 class="social__icon social__icon--facebook"
-                 aria-label="Volg Candy Nails &amp; Spa op Facebook">
-                <i class="bi bi-facebook" aria-hidden="true"></i>
-                <span>Facebook</span>
-              </a>
-              <a href="https://share.google/IUBSr1PeJHMTSULtn"
-                 target="_blank" rel="noopener noreferrer"
-                 class="social__icon social__icon--google"
-                 aria-label="Bekijk Candy Nails &amp; Spa op Google">
-                <i class="bi bi-google" aria-hidden="true"></i>
-                <span>Google</span>
-              </a>
+          <!-- Card 3: RUBBERBASE -->
+          <div class="service-card">
+            <div class="service-img-wrapper">
+              <span class="service-price-badge">Vanaf €35,-</span>
+              <!-- Hand painted aesthetic design preview -->
+              <img
+                src="img/Rubberbase.png"
+                alt="Gel Manicure illustration"
+                class="service-card-img"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+            <div class="service-card-content">
+              <h3 class="service-card-title">Rubberbase</h3>
+              <p class="service-card-desc">
+                Rubberbase is hetzelfde als BIAB alleen zonder kleur. Wordt vaak
+                gecombineerd met gellak naar keuze.
+              </p>
+       <a
+              class="btn btn-primary"
+              href="https://candynails-and-spa.salonized.com/widget_bookings/new"
+              target="_blank"
+            >
+              Boek afspraak
+            </a>
             </div>
           </div>
 
+          <!-- Card 4: GELLAK -->
+          <div class="service-card">
+            <div class="service-img-wrapper">
+              <span class="service-price-badge">Vanaf €25,-</span>
+              <!-- Real custom generated asset for pedicure -->
+              <img
+                src="img/Gellak.png"
+                alt="Pedicure Spa Illustration"
+                class="service-card-img"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+            <div class="service-card-content">
+              <h3 class="service-card-title">Gellak</h3>
+              <p class="service-card-desc">
+                Gellak is een langdurige nagellak die onder een UV- of LED-lamp
+                uithardt en tot wel enkele weken mooi blijft zitten zonder te
+                chippen. Alle kleuren mogelijk.
+              </p>
+       <a
+              class="btn btn-primary"
+              href="https://candynails-and-spa.salonized.com/widget_bookings/new"
+              target="_blank"
+            >
+              Boek afspraak
+            </a>
+            </div>
+          </div>
+
+          <!-- Card 5: NAIL ART -->
+          <div class="service-card">
+            <div class="service-img-wrapper">
+              <span class="service-price-badge">Vanaf €5,-</span>
+              <!-- Real custom generated asset for pedicure -->
+              <img
+                src="img/nailart.png"
+                alt="Pedicure Spa Illustration"
+                class="service-card-img"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+            <div class="service-card-content">
+              <h3 class="service-card-title">Nail art</h3>
+              <p class="service-card-desc">
+                Nail art is het creatief versieren van nagels met designs,
+                kleuren, glitters, steentjes of andere decoraties voor een
+                unieke uitstraling.
+              </p>
+       <a
+              class="btn btn-primary"
+              href="https://candynails-and-spa.salonized.com/widget_bookings/new"
+              target="_blank"
+            >
+              Boek afspraak
+            </a>
+            </div>
+          </div>
+
+          <!-- Card 5: GELLAK TENEN -->
+          <div class="service-card">
+            <div class="service-img-wrapper">
+              <span class="service-price-badge">Vanaf €25,-</span>
+              <!-- Real custom generated asset for pedicure -->
+              <img
+                src="img/Gellak_voeten.png"
+                alt="Pedicure Spa Illustration"
+                class="service-card-img"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+            <div class="service-card-content">
+              <h3 class="service-card-title">Gellak tenen</h3>
+              <p class="service-card-desc">
+                Gellak is natuurlijk ook beschikbaar voor uw tenen. In alle
+                kleuren mogelijk.
+              </p>
+       <a
+              class="btn btn-primary"
+              href="https://candynails-and-spa.salonized.com/widget_bookings/new"
+              target="_blank"
+            >
+              Boek afspraak
+            </a>
+            </div>
+          </div>
+
+          <!-- Card 5: PEDICURE -->
+          <div class="service-card">
+            <div class="service-img-wrapper">
+              <span class="service-price-badge">Vanaf €40,-</span>
+              <!-- Real custom generated asset for pedicure -->
+              <img
+                src="img/pedicure.png"
+                alt="Pedicure Spa Illustration"
+                class="service-card-img"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+            <div class="service-card-content">
+              <h3 class="service-card-title">Pedicure</h3>
+              <p class="service-card-desc">
+                Laat je voeten verwennen met een voetenbad, eelt verwijderen,
+                nagelriem knippen, vijlen, scrub, massage inclusief luxe
+                massagestoel.
+              </p>
+       <a
+              class="btn btn-primary"
+              href="https://candynails-and-spa.salonized.com/widget_bookings/new"
+              target="_blank"
+            >
+              Boek afspraak
+            </a>
+            </div>
+          </div>
+
+          <!-- Card 5: MANICURE -->
+          <div class="service-card">
+            <div class="service-img-wrapper">
+              <span class="service-price-badge">Vanaf €15,-</span>
+              <!-- Real custom generated asset for pedicure -->
+              <img
+                src="img/manicure.png"
+                alt="Pedicure Spa Illustration"
+                class="service-card-img"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+            <div class="service-card-content">
+              <h3 class="service-card-title">Manicure</h3>
+              <p class="service-card-desc">
+                Je nagelriem bijknippen, nagels vijlen en knippen om je handen
+                weer in top vorm te krijgen.
+              </p>
+       <a
+              class="btn btn-primary"
+              href="https://candynails-and-spa.salonized.com/widget_bookings/new"
+              target="_blank"
+            >
+              Boek afspraak
+            </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <!-- ── end Social ─── -->
 
-
-    <!-- ── 6. LOCATION ───────────────────── -->
-    <section class="location" id="locatie" aria-labelledby="locationHeading">
-      <div class="container">
-
-        <div class="location__grid">
-
-          <div class="location__content" data-reveal="slide-right">
-            <span class="section-tag">📍 Kom langs</span>
-            <h2 class="section-title" id="locationHeading">
-              Nagelstudio in <span class="text-accent">hartje Hoorn</span>
-            </h2>
-            <p class="location__text">
-              Candy Nails &amp; Spa is gelegen in het hart van het mooie Hoorn op Breed 29 📍 —
-              een centrale locatie die gemakkelijk bereikbaar is per fiets, auto of openbaar vervoer.
-            </p>
-            <p class="location__text">
-              Parkeren? Eenvoudig in dezelfde straat Breed of in de nabijgelegen parkeerruimtes. 🚗
-              Wij verwelkomen je graag in onze stijlvolle en comfortabele studio!
-            </p>
-
-            <address class="location__address">
-              <div class="location__info">
-                <span class="location__icon" aria-hidden="true">📍</span>
-                <div>
-                  <strong>Adres</strong>
-                  Breed 29, 1628BG Hoorn
-                </div>
-              </div>
-              <div class="location__info">
-                <span class="location__icon" aria-hidden="true">📞</span>
-                <div>
-                  <strong>Telefoon</strong>
-                  <a href="tel:+31646038269">06 46 03 82 69</a>
-                </div>
-              </div>
-              <div class="location__info">
-                <span class="location__icon" aria-hidden="true">🕐</span>
-                <div>
-                  <strong>Openingstijden</strong>
-                  <span id="todayHours">Ma – Za: 10:00 – 18:00</span>
-                </div>
-              </div>
-            </address>
-          </div>
-
-          <div class="location__visual" data-reveal="slide-left">
-            <div class="location__img-wrap">
-              <img src="img/winkel (1).jpg"
-                   alt="Candy Nails &amp; Spa nagelstudio – Breed 29, centrum Hoorn"
-                   class="location__img"
-                   width="480" height="400"
-                   loading="lazy" decoding="async" />
-            </div>
-          </div>
-
+    <!-- 4. Promo Section with Dynamic Countdown Banner -->
+    <section class="promo-section">
+      <div class="container promo-grid">
+        <div class="promo-content">
+          <span class="hero-tag">Bedrijfshond</span>
+          <h2 class="promo-heading">
+            Maak kennis met <br /><span>Bentley!</span>
+          </h2>
+          <p class="promo-desc">
+            Bentley is onze vrolijke en speelse viervoeter 🐾 die bijna altijd
+            gezellig aanwezig is.
+            <br />
+            <br />
+            Met zijn enthousiaste karakter en kwispelende staart zorgt hij
+            regelmatig voor een glimlach en wat extra gezelligheid. Hij is dol
+            op aandacht, spelen en natuurlijk een lekkere knuffel. 🐶 Wil je
+            Bentley graag ontmoeten?
+            <br />
+            <br />
+            Kom dan gerust eens bij ons langs, hij kijkt ernaar uit je te
+            begroeten! ❤️
+          </p>
         </div>
 
-        <div class="location__map" data-reveal="fade">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2420.9711207374457!2d5.05149817746425!3d52.6424347720934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c8a9ec012a51d7%3A0xd453cdc3b8eca541!2sCandy%20Nails%20Hoorn%20%F0%9F%92%85!5e0!3m2!1snl!2snl!4v1783603248812!5m2!1snl!2snl"
-            width="100%" height="360"
-            style="border:0; border-radius:16px; display:block;"
-            allowfullscreen
-            loading="lazy"
-            referrerpolicy="strict-origin-when-cross-origin"
-            title="Candy Nails &amp; Spa op de kaart – Breed 29, Hoorn">
-          </iframe>
+        <div class="promo-image-container">
+          <div class="promo-decorative-frame">
+            <img
+              src="img/bentley-frame.jpeg"
+              alt="Premium beauty collection set glow"
+              class="promo-img"
+              referrerpolicy="no-referrer"
+            />
+          </div>
         </div>
-
       </div>
     </section>
-    <!-- ── end Location ─── -->
 
+    <!-- Section Break -->
+    <div class="section-divider">
+      <div class="divider-line"></div>
+    </div>
 
-    <!-- ── 7. REVIEWS ────────────────────── -->
-    <section class="reviews" id="reviews" aria-labelledby="reviewsHeading">
-      <div class="container">
-        <div class="reviews__grid">
+    <!-- 4. SOCIAL MEDIA BANNER -->
+    <section class="about-section">
+      <div class="container promo-grid">
+        <div class="promo-image-container">
+          <div class="promo-decorative-frame">
+            <img
+              class="insta-img"
+              src="img/insta-nails.png"
+              alt="Premium beauty collection set glow"
+              class="promo-img"
+              referrerpolicy="no-referrer"
+            />
+          </div>
+        </div>
 
-          <div class="reviews__content" data-reveal="slide-right">
-            <span class="section-tag">⭐ Wat zeggen ze</span>
-            <h2 class="section-title" id="reviewsHeading">
-              Geliefd door onze <span class="text-accent">klanten</span>
-            </h2>
-            <p class="reviews__text">
-              Bij ons draait het om meer dan alleen mooie nagels — we willen dat iedere klant
-              zich bijzonder en verwend voelt. ✨ Van klassieke elegantie tot uniek nageldesign,
-              wij streven altijd naar een resultaat waar je blij van wordt. 💅
-            </p>
-            <a href="https://share.google/5dbhFweCkb55GFTcX"
-               class="btn btn--primary"
-               target="_blank" rel="noopener noreferrer">
-              Bekijk alle Google Reviews ⭐
+        <div class="promo-content">
+          <span class="hero-tag">Social media</span>
+          <h2 class="promo-heading">
+            Volg ons op <br />
+            <span>Social Media</span>
+          </h2>
+          <p class="promo-desc">
+            💅 Volg ons op social media en blijf op de hoogte van onze nieuwste
+            nagelcreaties en inspiratie. ✨ Laat je inspireren door onze
+            prachtige sets en ontdek jouw volgende favoriete look. 🌸 Bezoek
+            onze socials en ontdek meer!
+          </p>
+          <div class="social-icons d-flex gap-3">
+            <a
+              target="_blank"
+              href="https://www.instagram.com/candynailsenspa/"
+              class=""
+              aria-label="Follow Candy Nails on Instagram"
+            >
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a
+              target="_b lank"
+              href="https://www.facebook.com/profile.php?id=100066663679984"
+              class=""
+              aria-label="Follow Candy Nails on Facebook"
+            >
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a
+              target="_blank"
+              href="https://share.google/IUBSr1PeJHMTSULtn"
+              class=""
+              aria-label="Follow Candy Nails on Google"
+            >
+              <i class="bi bi-google"></i>
             </a>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="reviews__slider" data-reveal="slide-left">
-            <div class="slider" id="testimonialSlider"
-                 role="region"
-                 aria-label="Klantbeoordelingen"
-                 aria-live="polite">
+    <!-- 4. Promo Section with Dynamic Countdown Banner -->
+    <section class="promo-section" id="location">
+      <div class="container promo-grid">
+        <div class="promo-content">
+          <span class="hero-tag">Locatie</span>
+          <h2 class="promo-heading">
+            Nagelstudio centrum <span>Hoorn, Breed 29</span>
+          </h2>
+          <p class="promo-desc">
+            Candy Nails & Spa is gelegen in het hart van het mooie Hoorn op
+            Breed 29 📍, op een centrale locatie die gemakkelijk bereikbaar is.
+            <br />
+            <br />
+            Onze nagelstudio biedt een comfortabele en stijlvolle omgeving waar
+            je kunt ontspannen en genieten van hoogwaardige nagelverzorging 💅.
+            Parkeren is eenvoudig in dezelfde straat Breed of in de nabijgelegen
+            parkeerruimtes. 🚗
+          </p>
+        </div>
 
-              <div class="slide active" role="group" aria-label="Beoordeling 1 van 3">
-                <div class="slide__stars" aria-label="5 van 5 sterren">★★★★★</div>
-                <blockquote class="slide__text">
+        <div class="promo-image-container">
+          <div class="promo-decorative-frame">
+            <img
+              class="insta-img"
+              src="img/winkel (1).jpg"
+              alt="Premium beauty collection set glow"
+              class="promo-img"
+              referrerpolicy="no-referrer"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Break -->
+    <div class="section-divider">
+      <div class="divider-line"></div>
+    </div>
+
+    <!-- 5. Testimonial / Story Section (Loved by Clients) -->
+    <section class="about-section" id="about">
+      <div class="container about-grid">
+        <!-- Testimonial slider / rotator element -->
+        <div>
+          <div class="testimonial-card-luxury promo-decorative-frame">
+            <div class="testimonial-slider" id="testimonialSlider">
+              <!-- Testimonial 1 -->
+              <div class="slide active">
+                <div class="star-rating">
+                  <span>★</span><span>★</span><span>★</span><span>★</span
+                  ><span>★</span>
+                </div>
+                <p class="testimonial-text">
                   "Super fijne meiden, en ook zeer goede lak! Blijft altijd mooi
-                  tot aan de nieuwe afspraak (3 weken). Ik maak al jaren gebruik van
-                  de salon en altijd even goed!"
-                </blockquote>
-                <cite class="slide__author">
-                  Liz Hofstra <span>— Google Reviews</span>
-                </cite>
+                  tot aan de nieuwe afspraak ( 3 weken). Ik maak al jaren
+                  gebruik van de salon en altijd even goed!"
+                </p>
+                <div class="testimonial-client">
+                  Liz Hofstra
+                  <span style="font-weight: 300; margin-left: 5px"
+                    >— Google Reviews</span
+                  >
+                </div>
               </div>
 
-              <div class="slide" role="group" aria-label="Beoordeling 2 van 3">
-                <div class="slide__stars" aria-label="5 van 5 sterren">★★★★★</div>
-                <blockquote class="slide__text">
-                  "Ik laat hier nu ongeveer een jaar mijn nagels doen, en ik ben er
-                  super blij mee. Lieve meiden, werken snel maar goed, luisteren naar
-                  je wensen... super fijn."
-                </blockquote>
-                <cite class="slide__author">
-                  Lisa Suttorp <span>— Google Reviews</span>
-                </cite>
+              <!-- Testimonial 2 -->
+              <div class="slide">
+                <div class="star-rating">
+                  <span>★</span><span>★</span><span>★</span><span>★</span
+                  ><span>★</span>
+                </div>
+                <p class="testimonial-text">
+                  "Ik laat hier nu ongeveer een jaar mijn nagels doen, en ik ben
+                  er super blij mee. Lieve meiden, werken snel maar goed,
+                  luisteren naar je wensen... super fijn."
+                </p>
+                <div class="testimonial-client">
+                  Lisa Suttorp
+                  <span style="font-weight: 300; margin-left: 5px"
+                    >— Google Reviews</span
+                  >
+                </div>
               </div>
 
-              <div class="slide" role="group" aria-label="Beoordeling 3 van 3">
-                <div class="slide__stars" aria-label="5 van 5 sterren">★★★★★</div>
-                <blockquote class="slide__text">
+              <!-- Testimonial 3 -->
+              <div class="slide">
+                <div class="star-rating">
+                  <span>★</span><span>★</span><span>★</span><span>★</span
+                  ><span>★</span>
+                </div>
+                <p class="testimonial-text">
                   "Ik kom al ruim 2 jaar elke 4 weken naar Candy Nails en Spa!
                   Echt super dames en hun werk is accuraat en professioneel.
                   Altijd tevreden!"
-                </blockquote>
-                <cite class="slide__author">
-                  Yarina Bosma <span>— Google Reviews</span>
-                </cite>
+                </p>
+                <div class="testimonial-client">
+                  Yarina Bosma
+                  <span style="font-weight: 300; margin-left: 5px"
+                    >— Google Reviews</span
+                  >
+                </div>
               </div>
-
-            </div><!-- /slider -->
-
-            <div class="slider__controls">
-              <button class="slider__btn slider__btn--prev" id="sliderPrev"
-                      aria-label="Vorige beoordeling">
-                <i class="bi bi-chevron-left" aria-hidden="true"></i>
-              </button>
-              <div class="slider__dots" id="sliderDots" role="tablist"
-                   aria-label="Beoordelingen navigatie">
-                <button class="slider__dot active" data-index="0"
-                        role="tab" aria-selected="true"
-                        aria-label="Beoordeling 1"></button>
-                <button class="slider__dot" data-index="1"
-                        role="tab" aria-selected="false"
-                        aria-label="Beoordeling 2"></button>
-                <button class="slider__dot" data-index="2"
-                        role="tab" aria-selected="false"
-                        aria-label="Beoordeling 3"></button>
-              </div>
-              <button class="slider__btn slider__btn--next" id="sliderNext"
-                      aria-label="Volgende beoordeling">
-                <i class="bi bi-chevron-right" aria-hidden="true"></i>
-              </button>
             </div>
 
-          </div><!-- /reviews__slider -->
+            <div class="slider-controls">
+              <button
+                class="slider-ctrl-btn"
+                onclick="prevTestimonial()"
+                aria-label="Previous Review"
+              >
+                ←
+              </button>
+              <div class="slider-dots" id="sliderDots">
+                <span class="dot active" onclick="jumpToSlide(0)"></span>
+                <span class="dot" onclick="jumpToSlide(1)"></span>
+                <span class="dot" onclick="jumpToSlide(2)"></span>
+              </div>
+              <button
+                class="slider-ctrl-btn"
+                onclick="nextTestimonial()"
+                aria-label="Next Review"
+              >
+                →
+              </button>
+            </div>
+          </div>
+        </div>
 
+        <div class="about-story">
+          <span class="hero-tag">Wat zeggen onze klanten</span>
+          <h2 class="promo-heading">Geliefd bij onze <span>klanten</span></h2>
+          <p class="about-text">
+            Bij ons draait het om meer dan alleen mooie nagels: we willen dat
+            iedere klant zich bijzonder en verzorgd voelt. ✨ Onze klanten
+            waarderen onze persoonlijke aandacht, oog voor detail en de
+            kwaliteit van iedere behandeling. 💅
+          </p>
+          <p class="about-text">
+            Van een klassieke, elegante manicure tot een uniek nageldesign — we
+            streven altijd naar een resultaat waar je blij van wordt. 🤍 Lees
+            hieronder waarom zoveel klanten graag bij ons terugkomen. 🥰
+          </p>
+
+          <div class="about-signature-block">
+            <div>
+              <a
+                class="btn btn-primary"
+                href="https://share.google/5dbhFweCkb55GFTcX"
+                target="_blank"
+                >Klik hier voor onze google reviews</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <!-- ── end Reviews ─── -->
 
-
-    <!-- ── 8. GALLERY ────────────────────── -->
-    <section class="gallery" id="gallery" aria-labelledby="galleryHeading">
+    <!-- 6. Gallery Preview Section with Interactive Live Category Filter Controls -->
+    <section class="gallery-section" id="gallery">
       <div class="container">
-
-        <div class="section-header" data-reveal="fade">
-          <span class="section-tag">🎨 Artistic Lookbook</span>
-          <h2 class="section-title" id="galleryHeading">Gallery &amp; Inspiratie</h2>
+        <div class="section-header">
+          <span class="hero-tag">ARTISTIC LOOKBOOK</span>
+          <h2 class="section-title">Gallery</h2>
           <p class="section-sub">
-            Niks is te gek! 💅 Laat je inspireren door onze nagelcreaties en zoek
-            jouw volgende droomset. Alles is maatwerk en wordt afgestemd op jouw wensen.
+            Zie wat er allemaal mogelijk is. Niks is te gek en natuurlijk kan je
+            zelf persoonlijke aanpassingen doorgeven.
           </p>
         </div>
 
-        <!-- Filter tabs -->
-        <div class="gallery__filters" id="galleryFilters"
-             role="tablist" aria-label="Filter op nageltype">
-          <button class="filter-btn active" data-filter="all"
-                  role="tab" aria-selected="true">✦ Alles</button>
-          <button class="filter-btn" data-filter="acryl"
-                  role="tab" aria-selected="false">💎 Acryl</button>
-          <button class="filter-btn" data-filter="art"
-                  role="tab" aria-selected="false">🎨 Nail Art</button>
-          <button class="filter-btn" data-filter="gellak"
-                  role="tab" aria-selected="false">✨ Gellak</button>
+        <!-- Live Category Selector Filter Tabs -->
+        <div class="gallery-filter-menu" id="galleryFilters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="manicure">Acryl</button>
+          <button class="filter-btn" data-filter="art">Art</button>
+          <button class="filter-btn" data-filter="pedicure">Gellak</button>
         </div>
 
-        <!-- Gallery grid -->
-        <div class="gallery__grid" id="galleryGrid">
-
-          <div class="gallery-item" data-category="gellak"
-               data-src="img/french.png"
-               data-alt="French nails gellak bij Candy Nails Hoorn">
-            <div class="gallery-item__inner">
-              <img src="img/french.png"
-                   alt="French nails gellak bij Candy Nails Hoorn"
-                   loading="lazy" decoding="async" width="300" height="300" />
-              <div class="gallery-item__overlay">
-                <span class="gallery-item__cat">Gellak</span>
-                <h4 class="gallery-item__title">French Nails</h4>
-                <p class="gallery-item__desc">Classy &amp; stijlvol, ideaal voor iedere gelegenheid</p>
-                <span class="gallery-item__zoom" aria-hidden="true">🔍</span>
+        <!-- Gallery Items matching category data parameters -->
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- Item 1: Gel classic hand -->
+          <div class="gallery-item" data-category="manicure">
+            <div class="gallery-item-inner">
+              <img
+                src="img/french.png"
+                alt="Rose Quartz luxury style"
+                class="gallery-img"
+                referrerpolicy="no-referrer"
+              />
+              <div class="gallery-overlay">
+                <span class="gallery-item-category">Gellak</span>
+                <h4 class="gallery-item-title">French nails</h4>
+                <span class="gallery-item-tag"
+                  >Classy en stijloos, ideaal voor feestjes en bruidloften</span
+                >
               </div>
             </div>
           </div>
 
-          <div class="gallery-item" data-category="acryl"
-               data-src="img/chrome.png"
-               data-alt="Chrome powder acrylnagels bij Candy Nails Hoorn">
-            <div class="gallery-item__inner">
-              <img src="img/chrome.png"
-                   alt="Chrome powder acrylnagels bij Candy Nails Hoorn"
-                   loading="lazy" decoding="async" width="300" height="300" />
-              <div class="gallery-item__overlay">
-                <span class="gallery-item__cat">Acryl</span>
-                <h4 class="gallery-item__title">Chrome Powder</h4>
-                <p class="gallery-item__desc">Glans &amp; glamour in één</p>
-                <span class="gallery-item__zoom" aria-hidden="true">🔍</span>
+          <!-- Item 2: Marble art details -->
+          <div class="gallery-item" data-category="manicure">
+            <div class="gallery-item-inner">
+              <div class="gallery-gradient-bg">
+                <div class="gallery-gradient-sparkle">✦</div>
+                <img
+                  src="img/chrome.png"
+                  alt="Dusty rose marble decals"
+                  class="gallery-img"
+                  style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                  "
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <div class="gallery-overlay">
+                <span class="gallery-item-category">Gellak</span>
+                <h4 class="gallery-item-title">Chrome powder</h4>
+                <span class="gallery-item-tag">Glans and glamorous</span>
               </div>
             </div>
           </div>
 
-          <div class="gallery-item" data-category="art"
-               data-src="img/3d-ocean-theme.png"
-               data-alt="3D ocean theme nail art bij Candy Nails Hoorn">
-            <div class="gallery-item__inner">
-              <img src="img/3d-ocean-theme.png"
-                   alt="3D ocean theme nail art bij Candy Nails Hoorn"
-                   loading="lazy" decoding="async" width="300" height="300" />
-              <div class="gallery-item__overlay">
-                <span class="gallery-item__cat">Nail Art</span>
-                <h4 class="gallery-item__title">3D Ocean Theme</h4>
-                <p class="gallery-item__desc">Schelpen, sterren &amp; bloemen in 3D</p>
-                <span class="gallery-item__zoom" aria-hidden="true">🔍</span>
+          <!-- Item 3: Pedicure visual mock -->
+          <div class="gallery-item" data-category="art">
+            <div class="gallery-item-inner">
+              <img
+                src="img/3d-ocean-theme.png"
+                alt="Luxury therapeutic treatment visual"
+                class="gallery-img"
+                referrerpolicy="no-referrer"
+              />
+              <div class="gallery-overlay">
+                <span class="gallery-item-category">Acryl</span>
+                <h4 class="gallery-item-title">3D ocean theme</h4>
+                <span class="gallery-item-tag"
+                  >3d vormen met ocean theme met schelpen, sterren en
+                  bloemen</span
+                >
               </div>
             </div>
           </div>
 
-          <div class="gallery-item" data-category="gellak"
-               data-src="img/french_chrome.png"
-               data-alt="French met chrome tint gellak bij Candy Nails Hoorn">
-            <div class="gallery-item__inner">
-              <img src="img/french_chrome.png"
-                   alt="French met chrome tint gellak bij Candy Nails Hoorn"
-                   loading="lazy" decoding="async" width="300" height="300" />
-              <div class="gallery-item__overlay">
-                <span class="gallery-item__cat">Gellak</span>
-                <h4 class="gallery-item__title">French met Chrome</h4>
-                <p class="gallery-item__desc">Classy én opvallend tegelijk</p>
-                <span class="gallery-item__zoom" aria-hidden="true">🔍</span>
+          <!-- Item 4: Chrome gradient (Soft Gradient design with sparkles) -->
+          <div class="gallery-item" data-category="pedicure">
+            <div class="gallery-item-inner">
+              <div class="gallery-gradient-bg">
+                <img
+                  src="img/french_chrome.png"
+                  alt="Luxury therapeutic treatment visual"
+                  class="gallery-img"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <div class="gallery-overlay">
+                <span class="gallery-item-category">Gellak with chrome</span>
+                <h4 class="gallery-item-title">French met chrome tint</h4>
+                <span class="gallery-item-tag"
+                  >classy en opvallend tegelijk</span
+                >
               </div>
             </div>
           </div>
 
-          <div class="gallery-item" data-category="art"
-               data-src="img/marmer-look.png"
-               data-alt="Teal marmerlook nail art bij Candy Nails Hoorn">
-            <div class="gallery-item__inner">
-              <img src="img/marmer-look.png"
-                   alt="Teal marmerlook nail art bij Candy Nails Hoorn"
-                   loading="lazy" decoding="async" width="300" height="300" />
-              <div class="gallery-item__overlay">
-                <span class="gallery-item__cat">Nail Art</span>
-                <h4 class="gallery-item__title">Teal Marmer Look</h4>
-                <p class="gallery-item__desc">Marmerlook met passend kleurenpalet</p>
-                <span class="gallery-item__zoom" aria-hidden="true">🔍</span>
+          <!-- Item 5: Classic French with Gold line (Elegant visual styling) -->
+          <div class="gallery-item" data-category="art">
+            <div class="gallery-item-inner">
+              <div class="gallery-gradient-bg">
+                <img
+                  src="img/marmer-look.png"
+                  alt="Luxury therapeutic treatment visual"
+                  class="gallery-img"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <div class="gallery-overlay">
+                <span class="gallery-item-category">Acryl</span>
+                <h4 class="gallery-item-title">Teal marmer look</h4>
+                <span class="gallery-item-tag"
+                  >marmerlook met passende kleurenpallet</span
+                >
               </div>
             </div>
           </div>
 
-          <div class="gallery-item" data-category="acryl"
-               data-src="img/marmer-pink.png"
-               data-alt="Pink marmerlook acrylnagels bij Candy Nails Hoorn">
-            <div class="gallery-item__inner">
-              <img src="img/marmer-pink.png"
-                   alt="Pink marmerlook acrylnagels bij Candy Nails Hoorn"
-                   loading="lazy" decoding="async" width="300" height="300" />
-              <div class="gallery-item__overlay">
-                <span class="gallery-item__cat">Acryl</span>
-                <h4 class="gallery-item__title">Pink Marmer</h4>
-                <p class="gallery-item__desc">Romantisch roze met marmerlook</p>
-                <span class="gallery-item__zoom" aria-hidden="true">🔍</span>
+          <!-- Item 5: Classic French with Gold line (Elegant visual styling) -->
+          <div class="gallery-item" data-category="manicure">
+            <div class="gallery-item-inner">
+              <div class="gallery-gradient-bg">
+                <img
+                  src="img/marmer-pink.png"
+                  alt="Luxury therapeutic treatment visual"
+                  class="gallery-img"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <div class="gallery-overlay">
+                <span class="gallery-item-category">Acryl</span>
+                <h4 class="gallery-item-title">Pink marmer look</h4>
+                <span class="gallery-item-tag"
+                  >marmerlook met passende kleurenpallet</span
+                >
               </div>
             </div>
           </div>
 
-          <div class="gallery-item" data-category="acryl"
-               data-src="img/baby-boom.png"
-               data-alt="Baby Boom acrylnagels met 3D art bij Candy Nails Hoorn">
-            <div class="gallery-item__inner">
-              <img src="img/baby-boom.png"
-                   alt="Baby Boom acrylnagels met 3D art bij Candy Nails Hoorn"
-                   loading="lazy" decoding="async" width="300" height="300" />
-              <div class="gallery-item__overlay">
-                <span class="gallery-item__cat">Acryl</span>
-                <h4 class="gallery-item__title">Baby Boom + 3D Art</h4>
-                <p class="gallery-item__desc">Elegant met baby boom effect</p>
-                <span class="gallery-item__zoom" aria-hidden="true">🔍</span>
+          <!-- Item 5: Classic French with Gold line (Elegant visual styling) -->
+          <div class="gallery-item" data-category="manicure">
+            <div class="gallery-item-inner">
+              <div class="gallery-gradient-bg">
+                <img
+                  src="img/baby-boom.png"
+                  alt="Luxury therapeutic treatment visual"
+                  class="gallery-img"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <div class="gallery-overlay">
+                <span class="gallery-item-category">Acryl</span>
+                <h4 class="gallery-item-title">Baby Boom met 3D Art</h4>
+                <span class="gallery-item-tag"
+                  >Elegant with 3D art and babyboom effect</span
+                >
               </div>
             </div>
           </div>
 
-          <div class="gallery-item" data-category="art"
-               data-src="img/cate-eye-1.png"
-               data-alt="Cat Eye nail art met gouden accenten bij Candy Nails Hoorn">
-            <div class="gallery-item__inner">
-              <img src="img/cate-eye-1.png"
-                   alt="Cat Eye nail art met gouden accenten bij Candy Nails Hoorn"
-                   loading="lazy" decoding="async" width="300" height="300" />
-              <div class="gallery-item__overlay">
-                <span class="gallery-item__cat">Nail Art</span>
-                <h4 class="gallery-item__title">Cat Eye + Gold</h4>
-                <p class="gallery-item__desc">Micro gouden lijn detail</p>
-                <span class="gallery-item__zoom" aria-hidden="true">🔍</span>
+          <!-- Item 5: Classic French with Gold line (Elegant visual styling) -->
+          <div class="gallery-item" data-category="art">
+            <div class="gallery-item-inner">
+              <div class="gallery-gradient-bg">
+                <img
+                  src="img/cate-eye-1.png"
+                  alt="Luxury therapeutic treatment visual"
+                  class="gallery-img"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <div class="gallery-overlay">
+                <span class="gallery-item-category">Acryl</span>
+                <h4 class="gallery-item-title">Cat Eye met gold accents</h4>
+                <span class="gallery-item-tag"
+                  >Micro gold line overlay detailing</span
+                >
               </div>
             </div>
           </div>
 
-          <div class="gallery-item" data-category="gellak"
-               data-src="img/french-dots.png"
-               data-alt="French met dots gellak bij Candy Nails Hoorn">
-            <div class="gallery-item__inner">
-              <img src="img/french-dots.png"
-                   alt="French met dots gellak bij Candy Nails Hoorn"
-                   loading="lazy" decoding="async" width="300" height="300" />
-              <div class="gallery-item__overlay">
-                <span class="gallery-item__cat">Gellak</span>
-                <h4 class="gallery-item__title">French &amp; Dots</h4>
-                <p class="gallery-item__desc">Zwarte french met witte dots</p>
-                <span class="gallery-item__zoom" aria-hidden="true">🔍</span>
+          <!-- Item 5: Classic French with Gold line (Elegant visual styling) -->
+          <div class="gallery-item" data-category="pedicure">
+            <div class="gallery-item-inner">
+              <div class="gallery-gradient-bg">
+                <img
+                  src="img/french-dots.png"
+                  alt="Luxury therapeutic treatment visual"
+                  class="gallery-img"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <div class="gallery-overlay">
+                <span class="gallery-item-category">Acryl</span>
+                <h4 class="gallery-item-title">French en Dots</h4>
+                <span class="gallery-item-tag"
+                  >Zwarte french met witte dots</span
+                >
               </div>
             </div>
           </div>
 
-          <div class="gallery-item" data-category="acryl"
-               data-src="img/rose-powder-chrome.png"
-               data-alt="Rose powder chrome acrylnagels bij Candy Nails Hoorn">
-            <div class="gallery-item__inner">
-              <img src="img/rose-powder-chrome.png"
-                   alt="Rose powder chrome acrylnagels bij Candy Nails Hoorn"
-                   loading="lazy" decoding="async" width="300" height="300" />
-              <div class="gallery-item__overlay">
-                <span class="gallery-item__cat">Acryl</span>
-                <h4 class="gallery-item__title">Rose Powder Chrome</h4>
-                <p class="gallery-item__desc">Romantisch rose met chrome finish</p>
-                <span class="gallery-item__zoom" aria-hidden="true">🔍</span>
+          <!-- Item 5: Classic French with Gold line (Elegant visual styling) -->
+          <div class="gallery-item" data-category="manicure">
+            <div class="gallery-item-inner">
+              <div class="gallery-gradient-bg">
+                <img
+                  src="img/rose-powder-chrome.png"
+                  alt="Luxury therapeutic treatment visual"
+                  class="gallery-img"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <div class="gallery-overlay">
+                <span class="gallery-item-category">Acryl</span>
+                <h4 class="gallery-item-title">Rose Powder Chrome</h4>
+                <span class="gallery-item-tag">Rose powder with chrome</span>
               </div>
             </div>
           </div>
 
-          <div class="gallery-item" data-category="gellak"
-               data-src="img/nail-art-fower.png"
-               data-alt="French met bloemen gellak bij Candy Nails Hoorn">
-            <div class="gallery-item__inner">
-              <img src="img/nail-art-fower.png"
-                   alt="French met bloemen gellak bij Candy Nails Hoorn"
-                   loading="lazy" decoding="async" width="300" height="300" />
-              <div class="gallery-item__overlay">
-                <span class="gallery-item__cat">Gellak</span>
-                <h4 class="gallery-item__title">French &amp; Flowers</h4>
-                <p class="gallery-item__desc">French met lieve bloemetjes</p>
-                <span class="gallery-item__zoom" aria-hidden="true">🔍</span>
+          <!-- Item 5: Classic French with Gold line (Elegant visual styling) -->
+          <div class="gallery-item" data-category="pedicure">
+            <div class="gallery-item-inner">
+              <div class="gallery-gradient-bg">
+                <img
+                  src="img/nail-art-fower.png"
+                  alt="Luxury therapeutic treatment visual"
+                  class="gallery-img"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <div class="gallery-overlay">
+                <span class="gallery-item-category">Gellaak</span>
+                <h4 class="gallery-item-title">French and flowers</h4>
+                <span class="gallery-item-tag"
+                  >Beetje french french met bloemen</span
+                >
               </div>
             </div>
           </div>
 
-          <div class="gallery-item" data-category="acryl"
-               data-src="img/white-nails.png"
-               data-alt="Witte acrylnagels met goud bij Candy Nails Hoorn">
-            <div class="gallery-item__inner">
-              <img src="img/white-nails.png"
-                   alt="Witte acrylnagels met goud bij Candy Nails Hoorn"
-                   loading="lazy" decoding="async" width="300" height="300" />
-              <div class="gallery-item__overlay">
-                <span class="gallery-item__cat">Acryl</span>
-                <h4 class="gallery-item__title">White + Gold Accents</h4>
-                <p class="gallery-item__desc">Egaal wit met gouden sieraden</p>
-                <span class="gallery-item__zoom" aria-hidden="true">🔍</span>
+          <!-- Item 5: Classic French with Gold line (Elegant visual styling) -->
+          <div class="gallery-item" data-category="manicure">
+            <div class="gallery-item-inner">
+              <div class="gallery-gradient-bg">
+                <img
+                  src="img/white-nails.png"
+                  alt="Luxury therapeutic treatment visual"
+                  class="gallery-img"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <div class="gallery-overlay">
+                <span class="gallery-item-category">Acryl</span>
+                <h4 class="gallery-item-title">
+                  White powder with gold acccents
+                </h4>
+                <span class="gallery-item-tag"
+                  >egaal wit met gouden siersels</span
+                >
               </div>
             </div>
           </div>
-
-          <div class="gallery-item" data-category="art"
-               data-src="img/crystal.png"
-               data-alt="Crystal nail art bij Candy Nails Hoorn">
-            <div class="gallery-item__inner">
-              <img src="img/crystal.png"
-                   alt="Crystal nail art bij Candy Nails Hoorn"
-                   loading="lazy" decoding="async" width="300" height="300" />
-              <div class="gallery-item__overlay">
-                <span class="gallery-item__cat">Nail Art</span>
-                <h4 class="gallery-item__title">Crystal Nails</h4>
-                <p class="gallery-item__desc">Kristallen voor een sprankende look</p>
-                <span class="gallery-item__zoom" aria-hidden="true">🔍</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="gallery-item" data-category="acryl"
-               data-src="img/purple-theme.png"
-               data-alt="Purple theme acrylnagels bij Candy Nails Hoorn">
-            <div class="gallery-item__inner">
-              <img src="img/purple-theme.png"
-                   alt="Purple theme acrylnagels bij Candy Nails Hoorn"
-                   loading="lazy" decoding="async" width="300" height="300" />
-              <div class="gallery-item__overlay">
-                <span class="gallery-item__cat">Acryl</span>
-                <h4 class="gallery-item__title">Purple Theme</h4>
-                <p class="gallery-item__desc">Paars kleurenpalet in stijl</p>
-                <span class="gallery-item__zoom" aria-hidden="true">🔍</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="gallery-item" data-category="art"
-               data-src="img/butter-fly.png"
-               data-alt="Vlinder nail art bij Candy Nails Hoorn">
-            <div class="gallery-item__inner">
-              <img src="img/butter-fly.png"
-                   alt="Vlinder nail art bij Candy Nails Hoorn"
-                   loading="lazy" decoding="async" width="300" height="300" />
-              <div class="gallery-item__overlay">
-                <span class="gallery-item__cat">Nail Art</span>
-                <h4 class="gallery-item__title">Butterfly Art</h4>
-                <p class="gallery-item__desc">Kleurrijke vlinder nail art</p>
-                <span class="gallery-item__zoom" aria-hidden="true">🔍</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="gallery-item" data-category="gellak"
-               data-src="img/hearts.png"
-               data-alt="Hartjes nail art gellak bij Candy Nails Hoorn">
-            <div class="gallery-item__inner">
-              <img src="img/hearts.png"
-                   alt="Hartjes nail art gellak bij Candy Nails Hoorn"
-                   loading="lazy" decoding="async" width="300" height="300" />
-              <div class="gallery-item__overlay">
-                <span class="gallery-item__cat">Gellak</span>
-                <h4 class="gallery-item__title">Hearts &amp; Love</h4>
-                <p class="gallery-item__desc">Lief &amp; romantisch met hartjes 💕</p>
-                <span class="gallery-item__zoom" aria-hidden="true">🔍</span>
-              </div>
-            </div>
-          </div>
-
-        </div><!-- /gallery__grid -->
-
+        </div>
       </div>
     </section>
-    <!-- ── end Gallery ─── -->
 
+    <!-- Section Break -->
+    <div class="section-divider">
+      <div class="divider-line"></div>
+    </div>
 
-    <!-- ── 9. FAQ ─────────────────────────── -->
-    <section class="faq" id="faq" aria-labelledby="faqHeading">
+    <!-- 6. FAQ Section with Accordion
+    <section class="faq-section" id="faq">
       <div class="container">
-
-        <div class="section-header" data-reveal="fade">
-          <span class="section-tag">❓ Vragen?</span>
-          <h2 class="section-title" id="faqHeading">Veelgestelde vragen</h2>
-          <p class="section-sub">
-            Heb je een vraag? Kijk even of het antwoord hier staat —
-            anders stuur ons gewoon een berichtje! 🌸
-          </p>
-        </div>
-
-        <div class="faq__list" id="faqList">
-
-          <div class="faq__item" data-reveal="fade" data-delay="0">
-            <button class="faq__question"
-                    aria-expanded="false"
-                    aria-controls="faqAnswer1"
-                    id="faqQ1">
-              <span>💅 Hoe lang blijft BIAB of gellak zitten?</span>
-              <span class="faq__icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq__answer" id="faqAnswer1"
-                 role="region" aria-labelledby="faqQ1" hidden>
-              <p>
-                BIAB en gellak blijven gemiddeld <strong>3 tot 4 weken</strong> mooi zitten
-                zonder te chippen. BIAB versterkt bovendien je natuurlijke nagel, waardoor het
-                extra duurzaam is. Na 3 à 4 weken raden wij aan een refill of bijvulling te boeken,
-                zodat je nagels er altijd perfect verzorgd uitzien. 🌸
-              </p>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                Accordion Item #1
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Placeholder content for this accordion, which is intended to
+                demonstrate the <code>.accordion-flush</code> class. This is the
+                first item's accordion body.
+              </div>
             </div>
           </div>
-
-          <div class="faq__item" data-reveal="fade" data-delay="100">
-            <button class="faq__question"
-                    aria-expanded="false"
-                    aria-controls="faqAnswer2"
-                    id="faqQ2">
-              <span>🗓️ Moet ik vooraf een afspraak maken of kan ik binnenlopen?</span>
-              <span class="faq__icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq__answer" id="faqAnswer2"
-                 role="region" aria-labelledby="faqQ2" hidden>
-              <p>
-                Wij werken voornamelijk <strong>op afspraak</strong>, zodat we je de aandacht en
-                tijd kunnen geven die je verdient. Je kunt snel en eenvoudig online boeken via
-                Salonized. Binnenlopen is altijd afhankelijk van beschikbaarheid. Voor een
-                gegarandeerde plek raden wij aan van tevoren te reserveren. 💖
-              </p>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                Accordion Item #2
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Placeholder content for this accordion, which is intended to
+                demonstrate the <code>.accordion-flush</code> class. This is the
+                second item's accordion body. Let's imagine this being filled
+                with some actual content.
+              </div>
             </div>
           </div>
-
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                Accordion Item #3
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Placeholder content for this accordion, which is intended to
+                demonstrate the <code>.accordion-flush</code> class. This is the
+                third item's accordion body. Nothing more exciting happening
+                here in terms of content, but just filling up the space to make
+                it look, at least at first glance, a bit more representative of
+                how this would look in a real-world application.
+              </div>
+            </div>
+          </div>
         </div>
-
       </div>
-    </section>
-    <!-- ── end FAQ ─── -->
+    </section> -->
 
-
-  </main>
-
-
-  <!-- ══════════════════════════════════════
-       FOOTER
-  ══════════════════════════════════════ -->
-  <footer class="footer" id="contact" role="contentinfo">
-
-    <div class="footer__top">
+    <!-- 7. Footer & Contact Form Section -->
+    <footer id="contact">
       <div class="container">
-        <div class="footer__grid">
-
-          <!-- Brand column -->
-          <div class="footer__col footer__col--brand">
-            <a href="#home" class="footer__logo" aria-label="Candy Nails &amp; Spa – terug naar boven">
-              <span class="footer__logo-text">Candy<em>Nails</em></span>
-              <span class="footer__logo-sub">&amp; Spa</span>
-            </a>
-            <p class="footer__tagline">
-              Bedankt voor je bezoek! 💅✨<br>
-              We verwelkomen je snel weer voor een nieuwe set prachtige nagels. 🌸
+        <div class="footer-grid">
+          <!-- Logo and Social Info Column -->
+          <div>
+            <div class="footer-logo-title">Candy<span>Nails</span></div>
+            <p class="footer-tagline">
+              Bedankt voor je bezoek! We hopen je snel weer te mogen verwelkomen
+              voor een nieuwe set prachtige nagels. 💅✨
             </p>
-            <div class="footer__socials">
-              <a href="https://www.instagram.com/candynailsenspa/"
-                 target="_blank" rel="noopener noreferrer"
-                 class="footer__social" aria-label="Instagram">
-                <i class="bi bi-instagram" aria-hidden="true"></i>
+            <p>Volg ons op social media voor de laatste updates. 📲💖</p>
+            <div class="footer-socials">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/candynailsenspa/"
+                class=""
+                aria-label="Follow Candy Nails on Instagram"
+              >
+                <i class="bi bi-instagram"></i>
               </a>
-              <a href="https://www.facebook.com/profile.php?id=100066663679984"
-                 target="_blank" rel="noopener noreferrer"
-                 class="footer__social" aria-label="Facebook">
-                <i class="bi bi-facebook" aria-hidden="true"></i>
+              <a
+                target="_b lank"
+                href="https://www.facebook.com/profile.php?id=100066663679984"
+                class=""
+                aria-label="Follow Candy Nails on Facebook"
+              >
+                <i class="bi bi-facebook"></i>
               </a>
-              <a href="https://share.google/IUBSr1PeJHMTSULtn"
-                 target="_blank" rel="noopener noreferrer"
-                 class="footer__social" aria-label="Google">
-                <i class="bi bi-google" aria-hidden="true"></i>
+              <a
+                target="_blank"
+                href="https://share.google/IUBSr1PeJHMTSULtn"
+                class=""
+                aria-label="Follow Candy Nails on Google"
+              >
+                <i class="bi bi-google"></i>
               </a>
             </div>
           </div>
 
-          <!-- Navigation column -->
-          <div class="footer__col">
-            <h3 class="footer__heading">Navigatie</h3>
-            <ul class="footer__links" role="list">
-              <li><a href="#home"     class="footer__link">Home</a></li>
-              <li><a href="#services" class="footer__link">Onze services</a></li>
-              <li><a href="#locatie"  class="footer__link">Locatie</a></li>
-              <li><a href="#reviews"  class="footer__link">Reviews</a></li>
-              <li><a href="#gallery"  class="footer__link">Gallery</a></li>
-              <li><a href="#faq"      class="footer__link">Veelgestelde vragen</a></li>
-              <li><a href="#contact"  class="footer__link">Contact</a></li>
+          <!-- Quick navigation -->
+          <div>
+            <h4 class="footer-header">Quick Links</h4>
+            <ul class="footer-links-list">
+              <li><a href="#home" class="footer-link">Home</a></li>
+              <li><a href="#services" class="footer-link">Onze Services</a></li>
+              <li><a href="#about" class="footer-link">Loved by Clients</a></li>
+              <li>
+                <a href="#gallery" class="footer-link">Gallery</a>
+              </li>
+              <li>
+                <a href="#contact" class="footer-link">Contact</a>
+              </li>
             </ul>
           </div>
 
-          <!-- Hours column -->
-          <div class="footer__col">
-            <h3 class="footer__heading">Openingstijden</h3>
-            <ul class="footer__hours" role="list">
-              <li><span>Maandag</span><span>10:00 – 18:00</span></li>
-              <li><span>Dinsdag</span><span>10:00 – 18:00</span></li>
-              <li><span>Woensdag</span><span>10:00 – 18:00</span></li>
-              <li class="footer__hours-note"><span>Donderdag (Zomer)</span><span>10:00 – 20:00</span></li>
-              <li class="footer__hours-note"><span>Donderdag (Winter)</span><span>10:00 – 18:00</span></li>
-              <li><span>Vrijdag</span><span>10:00 – 18:00</span></li>
-              <li><span>Zaterdag</span><span>10:00 – 18:00</span></li>
-              <li class="footer__hours-closed"><span>Zondag</span><span>Gesloten</span></li>
+          <!-- Hours of boutique operation -->
+          <div>
+            <h4 class="footer-header">Openingstijden</h4>
+            <ul
+              class="footer-links-list"
+              style="
+                font-size: 13px;
+                color: var(--color-light);
+                font-weight: 400;
+              "
+            >
+              <li
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  margin-bottom: 8px;
+                "
+              >
+                <span>Maandag</span>
+                <span>10:00 - 18:00</span>
+              </li>
+              <li
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  margin-bottom: 8px;
+                "
+              >
+                <span>Dinsdag</span>
+                <span>10:00 - 18:00</span>
+              </li>
+              <li
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  margin-bottom: 8px;
+                "
+              >
+                <span>Woensdag</span>
+                <span>10:00 - 18:00</span>
+              </li>
+              <li
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  margin-bottom: 8px;
+                "
+              >
+                <span>Donderdag (Zomer) <br /></span>
+                <span>10:00 - 20:00</span>
+              </li>
+              <li
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  margin-bottom: 8px;
+                "
+              >
+                <span>Donderdag (Winter)</span>
+                <span>10:00 - 18:00</span>
+              </li>
+              <li
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  margin-bottom: 8px;
+                "
+              >
+                <span>Vrijdag</span>
+                <span>10:00 - 18:00</span>
+              </li>
+              <li
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  margin-bottom: 8px;
+                "
+              >
+                <span>Zaterdag</span>
+                <span>10:00 - 18:00</span>
+              </li>
+              <li
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  margin-bottom: 8px;
+                "
+              >
+                <span>Zondag</span>
+                <span>Gesloten</span>
+              </li>
             </ul>
           </div>
 
-          <!-- Contact column -->
-          <div class="footer__col">
-            <h3 class="footer__heading">Contact &amp; Adres</h3>
-            <address class="footer__address">
-              <div class="footer__info-item">
-                <span aria-hidden="true">📍</span>
-                <span>Breed 29<br>1628BG Hoorn</span>
-              </div>
-              <div class="footer__info-item">
-                <span aria-hidden="true">📞</span>
-                <a href="tel:+31646038269">06 46 03 82 69</a>
-              </div>
-            </address>
-            <a href="https://candynails-and-spa.salonized.com/widget_bookings/new"
-               class="btn btn--primary btn--small footer__book"
-               target="_blank" rel="noopener noreferrer">
-              Boek nu 💅
-            </a>
-          </div>
+          <!-- Contact & Newsletter Input -->
+          <div>
+            <h4 class="footer-header">Locate Us</h4>
+            <div class="footer-info-item">
+              <span class="icon">📍</span>
+              <span
+                >Breed 29<br />1628BG <br />
+                Hoorn</span
+              >
+            </div>
 
-        </div><!-- /footer__grid -->
+            <div class="footer-info-item">
+              <span class="icon">📞</span>
+              <span>06 46 03 82 69</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2420.9711207374457!2d5.05149817746425!3d52.6424347720934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c8a9ec012a51d7%3A0xd453cdc3b8eca541!2sCandy%20Nails%20Hoorn%20%F0%9F%92%85!5e0!3m2!1snl!2snl!4v1783603248812!5m2!1snl!2snl"
+            width="100%"
+            height="225"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+
+        <!-- Copyright baseline -->
+        <div
+          class="copyright-row d-flex justify-content-between align-items-center"
+        >
+          <div>
+            &copy; 2026 CANDY NAILS & SPA. ALL RIGHTS RESERVED. WEBSITE
+            BY<strong>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/tam-nguyen-704422150/"
+                >Tam</a
+              ></strong
+            >
+          </div>
+        </div>
       </div>
-    </div>
+    </footer>
 
-    <div class="footer__bottom">
-      <div class="container">
-        <div class="footer__bottom-inner">
-          <p>
-            &copy; 2026 Candy Nails &amp; Spa. Alle rechten voorbehouden.
-            Website door
-            <a href="https://www.linkedin.com/in/tam-nguyen-704422150/"
-               target="_blank" rel="noopener noreferrer">Tam</a>
+    <!-- Floating Call to Action Appointment Trigger -->
+    <a
+      class="floating-booking-btn"
+      href="https://candynails-and-spa.salonized.com/widget_bookings/new"
+      target="_blank"
+      aria-label="Instantly Schedule Session"
+    >
+      <span>✦</span> Boek nu
+    </a>
+
+    <!-- 8. Interactive Scheduling Dialog Modal Box -->
+    <div
+      class="modal-overlay"
+      id="bookingModalOverlay"
+      onclick="handleOutsideModalClick(event)"
+    >
+      <div class="modal-card">
+        <button
+          class="modal-close-btn"
+          onclick="closeBookingModal()"
+          aria-label="Dismiss schedule form"
+        >
+          ✕
+        </button>
+
+        <!-- Primary Form Elements wrapper -->
+        <div id="bookingFormContext">
+          <div class="modal-header-block">
+            <h3 class="modal-title">Elevate Your Fingertips</h3>
+            <p class="modal-subtitle">
+              Secure your premium beauty treatment at Candy Nails & Spa. We will
+              reach back to confirm your appointment within 1 hour.
+            </p>
+          </div>
+
+          <form
+            class="booking-form"
+            id="actualBookingForm"
+            onsubmit="handleFormSubmission(event)"
+          >
+            <!-- Client details row -->
+            <div class="form-group-row">
+              <div class="form-group">
+                <label class="form-label" for="clientName">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="clientName"
+                  placeholder="Sophia Lin"
+                  required
+                />
+                <div class="error-msg" id="errName">
+                  Please enter your name.
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="clientPhone">Phone Number</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="clientPhone"
+                  placeholder="(555) 000-0000"
+                  required
+                />
+                <div class="error-msg" id="errPhone">
+                  Please enter a valid phone number.
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="clientEmail">Email Address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="clientEmail"
+                placeholder="sophia@example.com"
+                required
+              />
+              <div class="error-msg" id="errEmail">
+                Please enter a valid email.
+              </div>
+            </div>
+
+            <!-- Selection dropdown option blocks -->
+            <div class="form-group-row">
+              <div class="form-group">
+                <label class="form-label" for="serviceSelection"
+                  >Service Tier</label
+                >
+                <select class="form-control" id="serviceSelection" required>
+                  <option value="Gel Manicure">Gel Manicure ($45)</option>
+                  <option value="Acrylic Extensions">
+                    Acrylic Extensions ($65)
+                  </option>
+                  <option value="Custom Nail Art">
+                    Custom Nail Art ($35+)
+                  </option>
+                  <option value="Pedicure Spa">Pedicure Spa ($55)</option>
+                  <option value="Spring Glow-Up Deal">
+                    Spring Glow-Up Deal ($79)
+                  </option>
+                  <option value="General consultation">
+                    General consultation & Check-in
+                  </option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="artistSelection"
+                  >Preferred Specialist</label
+                >
+                <select class="form-control" id="artistSelection" required>
+                  <option value="No preference">First Available Artisan</option>
+                  <option value="Sophia Lin">Sophia Lin (Lead Founder)</option>
+                  <option value="Elena Rose">
+                    Elena Rose (Gel specialist)
+                  </option>
+                  <option value="Chloe Chen">
+                    Chloe Chen (Sculpture & Extension specialist)
+                  </option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Date & Time Row -->
+            <div class="form-group-row">
+              <div class="form-group">
+                <label class="form-label" for="appointmentDate"
+                  >Appointment Date</label
+                >
+                <!-- Enforce today or future inside javascript trigger -->
+                <input
+                  type="date"
+                  class="form-control"
+                  id="appointmentDate"
+                  required
+                />
+                <div class="error-msg" id="errDate">
+                  Please select a future date.
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="appointmentTime"
+                  >Preferred Time Slot</label
+                >
+                <select class="form-control" id="appointmentTime" required>
+                  <option value="09:30 AM">09:30 AM</option>
+                  <option value="11:00 AM">11:00 AM</option>
+                  <option value="12:30 PM">12:30 PM</option>
+                  <option value="02:00 PM">02:00 PM</option>
+                  <option value="03:30 PM">03:30 PM</option>
+                  <option value="05:00 PM">05:00 PM</option>
+                  <option value="06:30 PM">06:30 PM</option>
+                </select>
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-primary"
+              style="width: 100%; margin-top: 10px"
+            >
+              Confirm Reservation Block
+            </button>
+          </form>
+        </div>
+
+        <!-- Live Success Step output dynamically generated -->
+        <div id="bookingSuccessContext" class="booking-success-container">
+          <div class="success-checkmark">✔</div>
+          <h3 class="success-heading">Appointment Booked!</h3>
+          <p class="success-text">
+            Your luxury reservation block has been safely recorded. A details
+            digest has been sent to your email. We look forward to pampering
+            you!
           </p>
-          <p>
-            <a href="sitemap.xml" class="footer__link">Sitemap</a>
-          </p>
+
+          <div class="appointment-summary-box">
+            <div class="summary-line">
+              <span class="summary-label">Reference ID</span>
+              <span class="summary-value"
+                ><span class="summary-ref-code" id="resRefCode"
+                  >CNS-8491</span
+                ></span
+              >
+            </div>
+            <div class="summary-line">
+              <span class="summary-label">Client Name</span>
+              <span class="summary-value" id="resClient">Sophia Lin</span>
+            </div>
+            <div class="summary-line">
+              <span class="summary-label">Chosen Service</span>
+              <span class="summary-value" id="resService">Gel Manicure</span>
+            </div>
+            <div class="summary-line">
+              <span class="summary-label">Artisan Specialist</span>
+              <span class="summary-value" id="resArtist">No preference</span>
+            </div>
+            <div class="summary-line">
+              <span class="summary-label">Date & Time</span>
+              <span class="summary-value" id="resDateTime"
+                >June 14, 2026 at 02:00 PM</span
+              >
+            </div>
+          </div>
+
+          <button
+            class="btn btn-primary"
+            style="width: 100%"
+            onclick="closeBookingModal()"
+          >
+            Done
+          </button>
         </div>
       </div>
     </div>
 
-  </footer>
+    <!-- Embedded Vanilla Javascript triggers for interactivity -->
+    <script>
+      // 1. Scroll-Based Header Shifting and Link Active Tracking
+      window.addEventListener("scroll", () => {
+        const header = document.getElementById("mainHdr");
+        if (window.scrollY > 40) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
 
+        // Track active scrolling link states
+        const sections = document.querySelectorAll('section, div[id="home"]');
+        const navLinks = document.querySelectorAll(".nav-link");
+        let currentSectionId = "home";
 
-  <!-- ══════════════════════════════════════
-       FLOATING BOOKING BUTTON  (mobile)
-  ══════════════════════════════════════ -->
-  <a href="https://candynails-and-spa.salonized.com/widget_bookings/new"
-     class="floating-btn" id="floatingBtn"
-     target="_blank" rel="noopener noreferrer"
-     aria-label="Boek een afspraak bij Candy Nails &amp; Spa"
-     hidden>
-    <i class="bi bi-calendar-heart" aria-hidden="true"></i>
-    <span>Boek nu</span>
-  </a>
+        sections.forEach((sec) => {
+          const top = sec.offsetTop - 120;
+          const height = sec.offsetHeight;
+          if (window.scrollY >= top && window.scrollY < top + height) {
+            currentSectionId = sec.getAttribute("id") || "home";
+          }
+        });
 
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${currentSectionId}`) {
+            link.classList.add("active");
+          }
+        });
+      });
 
-  <!-- ══════════════════════════════════════
-       GALLERY LIGHTBOX
-  ══════════════════════════════════════ -->
-  <div class="lightbox" id="lightbox"
-       role="dialog" aria-modal="true"
-       aria-label="Afbeelding weergave"
-       aria-hidden="true">
-    <div class="lightbox__backdrop" id="lightboxBackdrop" aria-hidden="true"></div>
-    <div class="lightbox__container">
-      <button class="lightbox__close" id="lightboxClose" aria-label="Sluiten">
-        <i class="bi bi-x-lg" aria-hidden="true"></i>
-      </button>
-      <button class="lightbox__prev" id="lightboxPrev" aria-label="Vorige afbeelding">
-        <i class="bi bi-chevron-left" aria-hidden="true"></i>
-      </button>
-      <figure class="lightbox__figure">
-        <img class="lightbox__img" id="lightboxImg" src="" alt="" />
-      </figure>
-      <button class="lightbox__next" id="lightboxNext" aria-label="Volgende afbeelding">
-        <i class="bi bi-chevron-right" aria-hidden="true"></i>
-      </button>
-    </div>
-  </div>
+      // Set minimum reservation date range to today or later
+      document.addEventListener("DOMContentLoaded", () => {
+        const dateInput = document.getElementById("appointmentDate");
+        if (dateInput) {
+          const today = new Date().toISOString().split("T")[0];
+          dateInput.min = today;
+        }
+      });
 
+      // 2. Mobile Responsive Hamburg Stack Menu Toggling
+      const hmbTrigger = document.getElementById("hamburgerTrigger");
+      const mobileOverlay = document.getElementById("mobileNavOverlay");
 
-  <!-- JavaScript (deferred) -->
-  <script src="script.js" defer></script>
+      hmbTrigger.addEventListener("click", () => {
+        hmbTrigger.classList.toggle("active");
+        mobileOverlay.classList.toggle("active");
+      });
 
-</body>
+      function closeMobileNav() {
+        hmbTrigger.classList.remove("active");
+        mobileOverlay.classList.remove("active");
+      }
+
+      // 4. Testimonial carousel transitions
+      let currentSlideIndex = 0;
+      const slides = document.querySelectorAll("#testimonialSlider .slide");
+      const dots = document.querySelectorAll("#sliderDots .dot");
+
+      function updateTestimonialSlides() {
+        slides.forEach((slide, idx) => {
+          slide.classList.remove("active");
+          if (dots[idx]) dots[idx].classList.remove("active");
+        });
+        slides[currentSlideIndex].classList.add("active");
+        if (dots[currentSlideIndex])
+          dots[currentSlideIndex].classList.add("active");
+      }
+
+      function nextTestimonial() {
+        currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+        updateTestimonialSlides();
+      }
+
+      function prevTestimonial() {
+        currentSlideIndex =
+          (currentSlideIndex - 1 + slides.length) % slides.length;
+        updateTestimonialSlides();
+      }
+
+      function jumpToSlide(idx) {
+        currentSlideIndex = idx;
+        updateTestimonialSlides();
+      }
+
+      // Auto-advance testimonials every 8 seconds for luxury flow feel
+      setInterval(nextTestimonial, 8000);
+
+      // 5. Interactive Portfolio Gallery filters
+      const filterContainer = document.getElementById("galleryFilters");
+      const galleryItems = document.querySelectorAll(
+        "#galleryGrid .gallery-item",
+      );
+
+      filterContainer.addEventListener("click", (event) => {
+        if (event.target.classList.contains("filter-btn")) {
+          // Toggle Active highlight class on buttons
+          document
+            .querySelectorAll(".filter-btn")
+            .forEach((btn) => btn.classList.remove("active"));
+          event.target.classList.add("active");
+
+          const activeFilter = event.target.getAttribute("data-filter");
+
+          galleryItems.forEach((item) => {
+            const itemCategory = item.getAttribute("data-category");
+            if (activeFilter === "all" || itemCategory === activeFilter) {
+              item.classList.remove("hidden");
+            } else {
+              item.classList.add("hidden");
+            }
+          });
+        }
+      });
+
+      // 6. Interactive Booking Modal overlays logic
+      const bookingOverlay = document.getElementById("bookingModalOverlay");
+      const bFormSection = document.getElementById("bookingFormContext");
+      const bSuccessSection = document.getElementById("bookingSuccessContext");
+
+      function openBookingModal(preselectedService) {
+        bookingOverlay.classList.add("active");
+        bFormSection.style.display = "block";
+        bSuccessSection.style.display = "none";
+
+        // Auto-select corresponding service options based on clicked cards
+        if (preselectedService) {
+          const serviceSelect = document.getElementById("serviceSelection");
+          if (serviceSelect) {
+            serviceSelect.value = preselectedService;
+          }
+        }
+      }
+
+      function closeBookingModal() {
+        bookingOverlay.classList.remove("active");
+      }
+
+      function handleOutsideModalClick(e) {
+        if (e.target === bookingOverlay) {
+          closeBookingModal();
+        }
+      }
+
+      // Form submission validation & Dynamic success block triggers
+      function handleFormSubmission(event) {
+        event.preventDefault();
+
+        // Basic field checking
+        const name = document.getElementById("clientName").value.trim();
+        const phone = document.getElementById("clientPhone").value.trim();
+        const email = document.getElementById("clientEmail").value.trim();
+        const service = document.getElementById("serviceSelection").value;
+        const artist = document.getElementById("artistSelection").value;
+        const date = document.getElementById("appointmentDate").value;
+        const time = document.getElementById("appointmentTime").value;
+
+        // Handle custom random reference token creation
+        const randomRef = "CNS-" + Math.floor(1000 + Math.random() * 9000);
+
+        // Populate Success Summary output text contents
+        document.getElementById("resRefCode").innerText = randomRef;
+        document.getElementById("resClient").innerText = name;
+        document.getElementById("resService").innerText = service;
+        document.getElementById("resArtist").innerText = artist;
+
+        // Format selected date nicely (e.g. "June 14, 2026")
+        const parsedDate = new Date(date);
+        const options = { month: "long", day: "numeric", year: "numeric" };
+        const friendlyDate = parsedDate.toLocaleDateString("en-US", options);
+        document.getElementById("resDateTime").innerText =
+          `${friendlyDate} at ${time}`;
+
+        // Simulate network request and slide sections beautifully
+        bFormSection.style.display = "none";
+        bSuccessSection.style.display = "block";
+
+        // Reset standard form state labels
+        document.getElementById("actualBookingForm").reset();
+      }
+    </script>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"
+  ></script>
 </html>
